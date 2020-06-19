@@ -1,5 +1,11 @@
 package com.app.assignment.model;
 
+import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Story {
 	
 	private String id;
@@ -11,6 +17,8 @@ public class Story {
 	private int score;
 	
 	private String by;
+	
+	private Date time;
 	
 	/**
 	 * @return the id
@@ -81,7 +89,22 @@ public class Story {
 	public void setBy(String by) {
 		this.by = by;
 	}
-	
+
+	/**
+	 * @return the time
+	 */
+	@JsonSerialize(using=JSONDateSerializer.class)
+	public Date getTime() {
+		return time;
+	}
+
+	/**
+	 * @param time the time to set
+	 */
+	public void setTime(Date time) {
+		this.time = time;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -89,6 +112,7 @@ public class Story {
 		result = prime * result + ((by == null) ? 0 : by.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + score;
+		result = prime * result + ((time == null) ? 0 : time.hashCode());
 		result = prime * result + ((title == null) ? 0 : title.hashCode());
 		result = prime * result + ((url == null) ? 0 : url.hashCode());
 		return result;
@@ -115,6 +139,11 @@ public class Story {
 			return false;
 		if (score != other.score)
 			return false;
+		if (time == null) {
+			if (other.time != null)
+				return false;
+		} else if (!time.equals(other.time))
+			return false;
 		if (title == null) {
 			if (other.title != null)
 				return false;
@@ -130,9 +159,9 @@ public class Story {
 
 	@Override
 	public String toString() {
-		return "Story [id=" + id + ", title=" + title + ", url=" + url + ", score=" + score + ", by=" + by + "]";
-	}	
+		return "Story [id=" + id + ", title=" + title + ", url=" + url + ", score=" + score + ", by=" + by + ", time="
+				+ time + "]";
+	}
 	
 	
-
 }

@@ -15,8 +15,23 @@ public class AppController {
 	@Autowired
 	StoryService storyService;
 	
-	@GetMapping("/top/stories")
+	@GetMapping("/top-stories")
 	public List<Story> getTopStories()
+	{
+		List<Story> list=storyService.getTopStories();
+		return list;
+	}
+	
+	@GetMapping("/comments")
+	public List<Story> getComments()
+	{
+		List<Story> list=storyService.getTopStories();
+		return list;
+	}
+	
+	
+	@GetMapping("/past-stories")
+	public List<Story> getPastStories()
 	{
 		List<Story> list=storyService.getTopStories();
 		return list;
