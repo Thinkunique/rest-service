@@ -32,7 +32,7 @@ public class AppServiceImpl implements AppService {
 
 	@Override
 	public List<Story> getPastStories() {
-		return null;
+		return storyService.getPastStories();
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.app.assignment.model;
+package com.app.assignment.util;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;

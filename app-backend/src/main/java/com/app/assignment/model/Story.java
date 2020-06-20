@@ -1,7 +1,9 @@
 package com.app.assignment.model;
 
 import java.util.Date;
+import java.util.List;
 
+import com.app.assignment.util.JSONDateSerializer;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
@@ -19,6 +21,8 @@ public class Story {
 	private String by;
 	
 	private Date time;
+	
+	private List<Integer> kids;
 	
 	/**
 	 * @return the id
@@ -105,12 +109,27 @@ public class Story {
 		this.time = time;
 	}
 
+	/**
+	 * @return the kids
+	 */
+	public List<Integer> getKids() {
+		return kids;
+	}
+
+	/**
+	 * @param kids the kids to set
+	 */
+	public void setKids(List<Integer> kids) {
+		this.kids = kids;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((by == null) ? 0 : by.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((kids == null) ? 0 : kids.hashCode());
 		result = prime * result + score;
 		result = prime * result + ((time == null) ? 0 : time.hashCode());
 		result = prime * result + ((title == null) ? 0 : title.hashCode());
@@ -137,6 +156,11 @@ public class Story {
 				return false;
 		} else if (!id.equals(other.id))
 			return false;
+		if (kids == null) {
+			if (other.kids != null)
+				return false;
+		} else if (!kids.equals(other.kids))
+			return false;
 		if (score != other.score)
 			return false;
 		if (time == null) {
@@ -160,8 +184,8 @@ public class Story {
 	@Override
 	public String toString() {
 		return "Story [id=" + id + ", title=" + title + ", url=" + url + ", score=" + score + ", by=" + by + ", time="
-				+ time + "]";
+				+ time + ", kids=" + kids + "]";
 	}
-	
-	
+
+		
 }
