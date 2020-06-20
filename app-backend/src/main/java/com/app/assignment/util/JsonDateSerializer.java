@@ -9,7 +9,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
 
-public class JSONDateSerializer extends JsonSerializer<Date> {
+public class JsonDateSerializer extends JsonSerializer<Date> {
 
 	private static final SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
 

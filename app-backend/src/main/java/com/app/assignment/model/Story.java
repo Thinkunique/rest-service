@@ -3,7 +3,7 @@ package com.app.assignment.model;
 import java.util.Date;
 import java.util.List;
 
-import com.app.assignment.util.JSONDateSerializer;
+import com.app.assignment.util.JsonDateSerializer;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
@@ -97,7 +97,7 @@ public class Story {
 	/**
 	 * @return the time
 	 */
-	@JsonSerialize(using=JSONDateSerializer.class)
+	@JsonSerialize(using=JsonDateSerializer.class)
 	public Date getTime() {
 		return time;
 	}
