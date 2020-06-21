@@ -1,12 +1,13 @@
 package com.app.assignment.model;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Item {
+public class Item implements Serializable{
 
 	private String id;
 	
@@ -17,6 +18,8 @@ public class Item {
 	private int score;
 	
 	private String by;
+	
+	private String text;
 	
 	private Date time;
 	
@@ -136,6 +139,20 @@ public class Item {
 		this.kids = kids;
 	}
 
+	/**
+	 * @return the text
+	 */
+	public String getText() {
+		return text;
+	}
+
+	/**
+	 * @param text the text to set
+	 */
+	public void setText(String text) {
+		this.text = text;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -144,6 +161,7 @@ public class Item {
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((kids == null) ? 0 : kids.hashCode());
 		result = prime * result + score;
+		result = prime * result + ((text == null) ? 0 : text.hashCode());
 		result = prime * result + ((time == null) ? 0 : time.hashCode());
 		result = prime * result + ((title == null) ? 0 : title.hashCode());
 		result = prime * result + ((type == null) ? 0 : type.hashCode());
@@ -177,6 +195,11 @@ public class Item {
 			return false;
 		if (score != other.score)
 			return false;
+		if (text == null) {
+			if (other.text != null)
+				return false;
+		} else if (!text.equals(other.text))
+			return false;
 		if (time == null) {
 			if (other.time != null)
 				return false;
@@ -202,10 +225,11 @@ public class Item {
 
 	@Override
 	public String toString() {
-		return "Item [id=" + id + ", title=" + title + ", url=" + url + ", score=" + score + ", by=" + by + ", time="
-				+ time + ", type=" + type + ", kids=" + kids + "]";
+		return "Item [id=" + id + ", title=" + title + ", url=" + url + ", score=" + score + ", by=" + by + ", text="
+				+ text + ", time=" + time + ", type=" + type + ", kids=" + kids + "]";
 	}
-	
+
+
 	
 	
 	

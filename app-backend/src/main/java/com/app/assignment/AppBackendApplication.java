@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-@ComponentScan(basePackages={"com.app.assignment.controller","com.app.assignment.configuration","com.app.assignment.service.impl"})
+@ComponentScan(basePackages={"com.app.assignment.controller","com.app.assignment.repo.impl","com.app.assignment.configuration","com.app.assignment.service.impl"})
 public class AppBackendApplication {
 
 	public static void main(String[] args) {
