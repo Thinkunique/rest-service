@@ -26,6 +26,7 @@ import com.app.assignment.model.Item;
 import com.app.assignment.model.User;
 import com.app.assignment.repo.ItemRepository;
 import com.app.assignment.service.CommentService;
+import com.app.assignment.service.UserService;
 import com.app.assignment.util.JsonConverter;
 import com.google.gson.Gson;
 
@@ -41,6 +42,9 @@ public class CommentServiceImpl implements CommentService {
 	
 	@Autowired
 	ItemRepository itemRepository;
+	
+	@Autowired
+	UserService userService;
 
 	public Future<Map<String, List<Integer>>> calculateAsync(int id) throws InterruptedException {
 
@@ -118,15 +122,7 @@ public class CommentServiceImpl implements CommentService {
 			
 			if(item!=null)
 			{
-				Future<Comment> futureComment=getComment(item);
-				
-				Comment comment=null;
-				try {
-					comment = futureComment.get();
-				} catch (InterruptedException | ExecutionException e) {
-					System.out.println(e);
-				}
-				
+				Comment comment=getComment(item);
 				listItem.add(comment);
 	
 				System.out.println("Redis->"+comment);
@@ -151,37 +147,18 @@ public class CommentServiceImpl implements CommentService {
 	}
 	
 	
-	private Future<Comment> getComment(Item item)
+	private Comment getComment(Item item)
 	{
-		Gson gson = JsonConverter.getGson();
-		
-		CompletableFuture<Comment> completableFuture = CompletableFuture.supplyAsync(() -> {
 
-			Map m = (Map) restTemplate.getForObject("https://hacker-news.firebaseio.com/v0/user/" + item.getBy() + ".json",
-					Object.class);
-			new Gson().toJson(m, Map.class);
-			User user = gson.fromJson(gson.toJson(m, Map.class), User.class);
-			
-			Comment comment=new Comment();
-			comment.setId(item.getId());
-			comment.setText(item.getText());
-			
-			LocalDate today = LocalDate.now();                      
-			LocalDate birthday = Instant.ofEpochMilli(user.getCreated().getTime())
-				      .atZone(ZoneId.systemDefault())
-				      .toLocalDate();  
-			 
-			Period p = Period.between(birthday, today);
-	
-			user.setAge(p.getYears());
-			
-			comment.setUser(user);
-			
-			return comment;
-
-		},executor);
+		Comment comment=new Comment();
 		
-		return completableFuture;
+		User user=userService.getUserDetails(item.getBy());
+
+		comment.setId(item.getId());
+		comment.setText(item.getText());
+		comment.setUser(user);
+		
+		return comment;
 		
 	}
 

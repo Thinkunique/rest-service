@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.app.assignment.util.JsonDateSerializer;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -19,11 +20,13 @@ public class Story implements Serializable {
 	
 	private int score;
 	
+	@JsonProperty("createdBy")
 	private String by;
 	
 	private Date time;
 	
 	private List<Integer> kids;
+	
 	
 	/**
 	 * @return the id
@@ -187,6 +190,5 @@ public class Story implements Serializable {
 		return "Story [id=" + id + ", title=" + title + ", url=" + url + ", score=" + score + ", by=" + by + ", time="
 				+ time + ", kids=" + kids + "]";
 	}
-
-		
+	
 }

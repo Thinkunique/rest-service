@@ -12,8 +12,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+
 import com.app.assignment.model.Story;
+import com.app.assignment.model.User;
 import com.app.assignment.service.StoryService;
+import com.app.assignment.service.UserService;
 import com.app.assignment.util.JsonConverter;
 import com.google.gson.Gson;
 
@@ -26,6 +29,9 @@ public class StoryServiceImpl implements StoryService {
 	@Autowired
     @Qualifier("cachedThreadPool")
     private ExecutorService executor;
+	
+	@Autowired
+	UserService userService;
 	
 	@Override
 	public List<Story> getTopStories() throws InterruptedException {
