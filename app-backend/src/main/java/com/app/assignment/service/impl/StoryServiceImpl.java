@@ -56,23 +56,22 @@ public class StoryServiceImpl implements StoryService {
 		
 		latch.await();
 		
-		List<Story> sortedList=list.stream().sorted(Comparator.comparingInt(Story::getScore).reversed()).collect(Collectors.toList());
-	
-		List<Story> topList=sortedList.subList(0,10);
-		
+			
 		long lEndTime = System.currentTimeMillis();
 
         long output = lEndTime - lStartTime;
         
         System.out.println("Elapsed time in milliseconds: " + output/1000);
 		
-		return topList;
+		return list;
 	}
 
+
 	@Override
-	public List<Story> getPastStories() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Story> sortTopStories(List<Story> list) {
+		List<Story> sortedList=list.stream().sorted(Comparator.comparingInt(Story::getScore).reversed()).collect(Collectors.toList());
+		List<Story> topList=sortedList.subList(0,10);
+		return topList;
 	}
 
 }

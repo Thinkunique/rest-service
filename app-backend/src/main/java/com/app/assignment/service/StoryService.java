@@ -8,6 +8,6 @@ public interface StoryService {
 
 	public List<Story> getTopStories() throws InterruptedException;
 	
-	public List<Story> getPastStories();
+	public List<Story> sortTopStories(List<Story> list);
 	
 }
