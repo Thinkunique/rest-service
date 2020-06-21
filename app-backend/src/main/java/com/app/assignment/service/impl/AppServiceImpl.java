@@ -34,8 +34,15 @@ public class AppServiceImpl implements AppService {
 	}
 
 	@Override
+	@Cacheable(value="ten-second-cache",key="'Story'")
 	public List<Story> getTopStories() {
-		return storyService.getTopStories();
+		try {
+			return storyService.getTopStories();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	@Override

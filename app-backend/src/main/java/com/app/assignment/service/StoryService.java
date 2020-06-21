@@ -6,7 +6,7 @@ import com.app.assignment.model.Story;
 
 public interface StoryService {
 
-	public List<Story> getTopStories();
+	public List<Story> getTopStories() throws InterruptedException;
 	
 	public List<Story> getPastStories();
 	
