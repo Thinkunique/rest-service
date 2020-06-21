@@ -15,6 +15,7 @@ import org.springframework.web.client.RestTemplate;
 
 import com.app.assignment.model.Story;
 import com.app.assignment.model.User;
+import com.app.assignment.proxy.service.HackerNewsProxyService;
 import com.app.assignment.service.StoryService;
 import com.app.assignment.service.UserService;
 import com.app.assignment.util.JsonConverter;
@@ -24,7 +25,7 @@ import com.google.gson.Gson;
 public class StoryServiceImpl implements StoryService {
 
 	@Autowired
-	RestTemplate restTemplate;
+	HackerNewsProxyService hackerNewsProxyService;
 	
 	@Autowired
     @Qualifier("cachedThreadPool")
@@ -40,8 +41,9 @@ public class StoryServiceImpl implements StoryService {
 		
 		Gson gson = JsonConverter.getGson();
 		List<Story> list=new ArrayList<>();
-		List<Integer> topIds=(List<Integer>)restTemplate.getForObject("https://hacker-news.firebaseio.com/v0/topstories.json",Object.class);
-	//	List<Integer> topList=topIds.subList(0,10);
+		List<Integer> topIds=hackerNewsProxyService.getTopStories();
+
+		
 		System.out.print(topIds);
 		CountDownLatch latch = new CountDownLatch(topIds.size());
 		for(Integer i:topIds)
@@ -49,9 +51,8 @@ public class StoryServiceImpl implements StoryService {
 			
 			executor.submit(()->{
 			
-				Map st=(Map)restTemplate.getForObject("https://hacker-news.firebaseio.com/v0/item/"+i+".json",Object.class);
-				new Gson().toJson(st, Map.class);
-				Story s=gson.fromJson(gson.toJson(st, Map.class), Story.class);
+				Story s= hackerNewsProxyService.getStory(String.valueOf(i));
+				
 				list.add(s);
 				//System.out.println(s);
 				

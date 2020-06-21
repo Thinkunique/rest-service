@@ -12,6 +12,7 @@ import com.app.assignment.model.Story;
 import com.app.assignment.response.CommentResponse;
 import com.app.assignment.response.StoryResponse;
 import com.app.assignment.service.AppService;
+import com.app.assignment.util.AppConstants;
 
 @RestController
 public class AppController {
@@ -19,7 +20,7 @@ public class AppController {
 	@Autowired
 	AppService appService;
 	
-	@GetMapping("/top-stories")
+	@GetMapping(AppConstants.TOP_STORIES)
 	public StoryResponse getTopStories()
 	{
 		StoryResponse response=new StoryResponse();
@@ -29,7 +30,7 @@ public class AppController {
 		return response;
 	}
 	
-	@GetMapping("/{storyId}/comments")
+	@GetMapping(AppConstants.TOP_STORY_COMMENTS)
 	public CommentResponse getComments(@PathVariable("storyId") int storyId)
 	{
 		CommentResponse response=new CommentResponse();
@@ -40,7 +41,7 @@ public class AppController {
 	}
 	
 	
-	@GetMapping("/past-stories")
+	@GetMapping(AppConstants.PAST_TOP_STORIES)
 	public StoryResponse getPastStories()
 	{
 		StoryResponse response=new StoryResponse();

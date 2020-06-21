@@ -24,6 +24,7 @@ import org.springframework.web.client.RestTemplate;
 import com.app.assignment.model.Comment;
 import com.app.assignment.model.Item;
 import com.app.assignment.model.User;
+import com.app.assignment.proxy.service.HackerNewsProxyService;
 import com.app.assignment.repo.ItemRepository;
 import com.app.assignment.service.CommentService;
 import com.app.assignment.service.UserService;
@@ -32,9 +33,9 @@ import com.google.gson.Gson;
 
 @Service
 public class CommentServiceImpl implements CommentService {
-
+	
 	@Autowired
-	RestTemplate restTemplate;
+	HackerNewsProxyService hackerNewsProxyService;
 	
 	@Autowired
     @Qualifier("cachedThreadPool")
@@ -50,15 +51,9 @@ public class CommentServiceImpl implements CommentService {
 
 		Map<String, List<Integer>> h = new ConcurrentHashMap<>();
 
-		Gson gson = JsonConverter.getGson();
-		// = new CompletableFuture<>();
-
 		CompletableFuture<Map<String, List<Integer>>> completableFuture = CompletableFuture.supplyAsync(() -> {
 
-			Map m = (Map) restTemplate.getForObject("https://hacker-news.firebaseio.com/v0/item/" + id + ".json",
-					Object.class);
-			new Gson().toJson(m, Map.class);
-			Item childComment = gson.fromJson(gson.toJson(m, Map.class), Item.class);
+			Item childComment = hackerNewsProxyService.getItem(String.valueOf(id));
 
 			if (childComment.getId() != null && childComment.getKids() != null) {
 				h.put(childComment.getId(), childComment.getKids());
@@ -80,11 +75,9 @@ public class CommentServiceImpl implements CommentService {
 
 		long lStartTime = System.currentTimeMillis();
 		
-		Gson gson = JsonConverter.getGson();
-		Map st = (Map) restTemplate.getForObject("https://hacker-news.firebaseio.com/v0/item/" + id + ".json",
-				Object.class);
-		new Gson().toJson(st, Map.class);
-		Item s = gson.fromJson(gson.toJson(st, Map.class), Item.class);
+		
+		Item s = hackerNewsProxyService.getItem(String.valueOf(id));
+
 		System.out.println(s);
 		
 		Map<Integer,Integer> counts=new ConcurrentHashMap<>();
