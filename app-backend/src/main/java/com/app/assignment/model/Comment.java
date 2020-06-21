@@ -1,10 +1,13 @@
 package com.app.assignment.model;
 
+import java.util.List;
+
 public class Comment {
 
 	private String text;
 	
-	private User user;
+	List<Comment> childComments;
+	
 
 	/**
 	 * @return the text
@@ -21,18 +24,19 @@ public class Comment {
 	}
 
 	/**
-	 * @return the user
+	 * @return the childComments
 	 */
-	public User getUser() {
-		return user;
+	public List<Comment> getChildComments() {
+		return childComments;
 	}
 
 	/**
-	 * @param user the user to set
+	 * @param childComments the childComments to set
 	 */
-	public void setUser(User user) {
-		this.user = user;
+	public void setChildComments(List<Comment> childComments) {
+		this.childComments = childComments;
 	}
+
 	
 	
 	

@@ -22,7 +22,13 @@ public class AppServiceImpl implements AppService {
 	
 	@Override
 	public List<Comment> getComments(int storyId) {
-		return commentService.getComments(storyId);
+		try {
+			return commentService.getTopComments(storyId);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	@Override
