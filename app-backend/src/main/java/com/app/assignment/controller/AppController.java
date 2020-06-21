@@ -1,6 +1,7 @@
 package com.app.assignment.controller;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +17,8 @@ import com.app.assignment.util.AppConstants;
 
 @RestController
 public class AppController {
+	
+	Logger logger=Logger.getLogger("AppController");
 
 	@Autowired
 	AppService appService;
@@ -23,6 +26,7 @@ public class AppController {
 	@GetMapping(AppConstants.TOP_STORIES)
 	public StoryResponse getTopStories()
 	{
+		logger.info("topStories");
 		StoryResponse response=new StoryResponse();
 		List<Story> list=appService.getTopStories();
 		response.setTotal(list.size());
