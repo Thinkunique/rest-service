@@ -1,10 +1,12 @@
 package com.app.assignment.service.impl;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -33,10 +35,10 @@ public class StoryServiceImpl implements StoryService {
 		Gson gson = JsonConverter.getGson();
 		List<Story> list=new ArrayList<>();
 		List<Integer> topIds=(List<Integer>)restTemplate.getForObject("https://hacker-news.firebaseio.com/v0/topstories.json",Object.class);
-		List<Integer> topList=topIds.subList(0,10);
-		System.out.print(topList);
-		CountDownLatch latch = new CountDownLatch(10);
-		for(Integer i:topList)
+	//	List<Integer> topList=topIds.subList(0,10);
+		System.out.print(topIds);
+		CountDownLatch latch = new CountDownLatch(topIds.size());
+		for(Integer i:topIds)
 		{
 			
 			executor.submit(()->{
@@ -45,7 +47,7 @@ public class StoryServiceImpl implements StoryService {
 				new Gson().toJson(st, Map.class);
 				Story s=gson.fromJson(gson.toJson(st, Map.class), Story.class);
 				list.add(s);
-				System.out.println(s);
+				//System.out.println(s);
 				
 				latch.countDown();
 			});
@@ -53,13 +55,18 @@ public class StoryServiceImpl implements StoryService {
 		}
 		
 		latch.await();
+		
+		List<Story> sortedList=list.stream().sorted(Comparator.comparingInt(Story::getScore).reversed()).collect(Collectors.toList());
+	
+		List<Story> topList=sortedList.subList(0,10);
+		
 		long lEndTime = System.currentTimeMillis();
 
         long output = lEndTime - lStartTime;
         
         System.out.println("Elapsed time in milliseconds: " + output/1000);
 		
-		return list;
+		return topList;
 	}
 
 	@Override
