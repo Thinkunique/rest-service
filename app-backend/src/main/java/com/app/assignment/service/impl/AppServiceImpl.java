@@ -3,6 +3,7 @@ package com.app.assignment.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import com.app.assignment.model.Comment;
@@ -21,6 +22,7 @@ public class AppServiceImpl implements AppService {
 	CommentService commentService;
 	
 	@Override
+	@Cacheable(value="ten-second-cache",key="'CommentCache'+#id")
 	public List<Comment> getComments(int storyId) {
 		try {
 			return commentService.getTopComments(storyId);
