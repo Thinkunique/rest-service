@@ -1,6 +1,7 @@
 package com.app.assignment.service.impl;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
@@ -9,10 +10,10 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -95,7 +96,10 @@ public class CommentServiceImpl implements CommentService {
 		latch.await();
 		//executor.shutdown();
 		System.out.println("------------------------------------");
-		for(Map.Entry<Integer, Integer> entry:counts.entrySet())
+		
+		Map<Integer, Integer> sortedByValue = counts.entrySet().stream().sorted(Map.Entry.<Integer, Integer>comparingByValue().reversed()).collect(Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+
+		for(Map.Entry<Integer, Integer> entry:sortedByValue.entrySet())
 		{
 			System.out.println(entry.getKey()+"------>"+entry.getValue());
 		}
@@ -111,6 +115,7 @@ public class CommentServiceImpl implements CommentService {
 		
 		return null;
 	}
+	
 
 	private int loop(int kid) throws InterruptedException {
 
