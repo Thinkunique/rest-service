@@ -12,6 +12,7 @@ public class User implements Serializable {
 	@JsonProperty("username")
 	private String id;
 	
+	@JsonProperty("createdDate")
 	private Date created;
 	
 	private int age;

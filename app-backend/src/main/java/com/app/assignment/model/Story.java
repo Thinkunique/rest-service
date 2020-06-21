@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 import com.app.assignment.util.JsonDateSerializer;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -23,8 +24,10 @@ public class Story implements Serializable {
 	@JsonProperty("createdBy")
 	private String by;
 	
+	@JsonProperty("createdDate")
 	private Date time;
 	
+	@JsonIgnore
 	private List<Integer> kids;
 	
 	
