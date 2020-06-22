@@ -39,12 +39,12 @@ public class AppController {
 	@GetMapping(AppConstants.TOP_STORY_COMMENTS)
 	public CommentResponse getComments(@PathVariable("storyId") int storyId)
 	{
-		logger.info("Enter: AppController.getComments [{}]",storyId);
+		logger.info("Enter: AppController.getComments-[{}]",storyId);
 		CommentResponse response=new CommentResponse();
 		List<Comment> list=appService.getComments(storyId);
 		response.setTotal(list.size());
 		response.setComments(list);
-		logger.info("Exit: AppController.getComments [{}]",storyId);
+		logger.info("Exit: AppController.getComments-[{}]",storyId);
 		return response;
 	}
 	

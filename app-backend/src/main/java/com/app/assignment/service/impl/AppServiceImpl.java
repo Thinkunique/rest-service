@@ -28,14 +28,14 @@ public class AppServiceImpl implements AppService {
 	@Override
 	@Cacheable(value = "ten-second-cache", key = "'CommentCache'+#id")
 	public List<Comment> getComments(int storyId) {
-		logger.info("Enter AppServiceImpl.getComments");
+		logger.info("Enter AppServiceImpl.getComments-[{}]",storyId);
 		List<Comment> list = null;
 		try {
 			list = commentService.getTopComments(storyId);
 		} catch (InterruptedException e) {
-			logger.error("Error while retrieving comment", e);
+			logger.error("Error while retrieving comment-[{}]",storyId,e);
 		}
-		logger.info("Enter AppServiceImpl.getComments");
+		logger.info("Enter AppServiceImpl.getComments-[{}]",storyId);
 		return list;
 	}
 

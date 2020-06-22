@@ -49,7 +49,7 @@ public class HackerNewsProxyServiceImpl implements HackerNewsProxyService {
 	}
 
 	public User getUserDetails(String id) {
-		logger.info("Enter: HackerNewsProxyServiceImpl.getUserDetails");
+		logger.info("Enter: HackerNewsProxyServiceImpl.getUserDetails-[{}]",id);
 		Gson gson = JsonConverter.getGson();
 		User user = null;
 		try {
@@ -60,14 +60,13 @@ public class HackerNewsProxyServiceImpl implements HackerNewsProxyService {
 			logger.error("Error while fetching user details from hacker news api", e);
 		}
 		logger.info("Successfully fetched user details from hacker news api");
-		logger.info("Exit: HackerNewsProxyServiceImpl.getUserDetails");
-
+		logger.info("Exit: HackerNewsProxyServiceImpl.getUserDetails-[{}]",id);
 		return user;
 	}
 
 	@Override
 	public Item getItem(String id) {
-		logger.info("Enter: HackerNewsProxyServiceImpl.getItem");
+		logger.info("Enter: HackerNewsProxyServiceImpl.getItem-[{}]",id);
 		Gson gson = JsonConverter.getGson();
 		Item item = null;
 		try {
@@ -77,14 +76,13 @@ public class HackerNewsProxyServiceImpl implements HackerNewsProxyService {
 		} catch (Exception e) {
 			logger.error("Error while fetching item from hacker news api", e);
 		}
-		logger.info("Exit: HackerNewsProxyServiceImpl.getItem");
+		logger.info("Exit: HackerNewsProxyServiceImpl.getItem-[{}]",id);
 		return item;
 	}
 
 	@Override
 	public Story getStory(String id) {
-
-		logger.info("Enter: HackerNewsProxyServiceImpl.getStory");
+		logger.info("Enter: HackerNewsProxyServiceImpl.getStory-[{}]",id);
 		Gson gson = JsonConverter.getGson();
 		Story story = null;
 		try {
@@ -94,9 +92,8 @@ public class HackerNewsProxyServiceImpl implements HackerNewsProxyService {
 		} catch (Exception e) {
 			logger.error("Error while fetching story from hacker news api", e);
 		}
-		logger.info("Exit: HackerNewsProxyServiceImpl.getStory");
+		logger.info("Exit: HackerNewsProxyServiceImpl.getStory-[{}]",id);
 		return story;
-
 	}
 
 }

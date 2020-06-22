@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public User getUserDetails(String id) {
-		logger.info("Enter: UserServiceImpl.getUserDetails");
+		logger.info("Enter: UserServiceImpl.getUserDetails-[{}]",id);
 		CompletableFuture<User> completableFuture = CompletableFuture.supplyAsync(() -> {
 			User user = hackerNewsProxyService.getUserDetails(id);
 			LocalDate today = LocalDate.now();
@@ -46,9 +46,9 @@ public class UserServiceImpl implements UserService {
 		try {
 			user = completableFuture.get();
 		} catch (InterruptedException | ExecutionException e) {
-			logger.error("Error while fetching user details", e);
+			logger.error("Error while fetching user details-[{}]",id, e);
 		}
-		logger.info("Exit: UserServiceImpl.getUserDetails");
+		logger.info("Exit: UserServiceImpl.getUserDetails-[{}]",id);
 		return user;
 	}
 
