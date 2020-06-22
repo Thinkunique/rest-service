@@ -27,22 +27,24 @@ public class AppController {
 	@GetMapping(AppConstants.TOP_STORIES)
 	public StoryResponse getTopStories()
 	{
-		logger.info("topStories");
+		logger.info("Enter: AppController.topStories");
 		StoryResponse response=new StoryResponse();
 		List<Story> list=appService.getTopStories();
 		response.setTotal(list.size());
 		response.setStories(list);
-		logger.info("Response="+response);
+		logger.info("Exit: AppController.topStories");
 		return response;
 	}
 	
 	@GetMapping(AppConstants.TOP_STORY_COMMENTS)
 	public CommentResponse getComments(@PathVariable("storyId") int storyId)
 	{
+		logger.info("Enter: AppController.getComments [{}]",storyId);
 		CommentResponse response=new CommentResponse();
 		List<Comment> list=appService.getComments(storyId);
 		response.setTotal(list.size());
 		response.setComments(list);
+		logger.info("Exit: AppController.getComments [{}]",storyId);
 		return response;
 	}
 	
@@ -50,10 +52,12 @@ public class AppController {
 	@GetMapping(AppConstants.PAST_TOP_STORIES)
 	public StoryResponse getPastStories()
 	{
+		logger.info("Enter: AppController.getPastStories");
 		StoryResponse response=new StoryResponse();
 		List<Story> list=appService.getPastStories();
 		response.setStories(list);
 		response.setTotal(list.size());
+		logger.info("Exit: AppController.getPastStories");
 		return response;
 	}
 	

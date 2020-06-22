@@ -1,9 +1,5 @@
 package com.app.assignment.service.impl;
 
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.Period;
-import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -16,10 +12,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
 import java.util.stream.Collectors;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import com.app.assignment.model.Comment;
 import com.app.assignment.model.Item;
@@ -28,11 +25,12 @@ import com.app.assignment.proxy.service.HackerNewsProxyService;
 import com.app.assignment.repo.ItemRepository;
 import com.app.assignment.service.CommentService;
 import com.app.assignment.service.UserService;
-import com.app.assignment.util.JsonConverter;
-import com.google.gson.Gson;
+
 
 @Service
 public class CommentServiceImpl implements CommentService {
+	
+	private static Logger logger=LogManager.getLogger();
 	
 	@Autowired
 	HackerNewsProxyService hackerNewsProxyService;
@@ -72,19 +70,13 @@ public class CommentServiceImpl implements CommentService {
 
 	@Override
 	public List<Comment> getTopComments(int id) throws InterruptedException {
-
-		long lStartTime = System.currentTimeMillis();
-		
 		
 		Item s = hackerNewsProxyService.getItem(String.valueOf(id));
 
 		System.out.println(s);
 		
 		Map<Integer,Integer> counts=new ConcurrentHashMap<>();
-		
 
-		//ExecutorService executor = Executors.newCachedThreadPool();
-		
 		CountDownLatch latch = new CountDownLatch(s.getKids().size());
 		for (Integer i : s.getKids()) {
 
@@ -128,14 +120,7 @@ public class CommentServiceImpl implements CommentService {
 		
 		System.out.println("count size: "+s.getKids().size());
 		System.out.println("counts size: "+counts.size());
-		
-		
-		long lEndTime = System.currentTimeMillis();
-
-        long output = lEndTime - lStartTime;
-        
-        System.out.println("Elapsed time in milliseconds: " + output/1000);
-		
+				
 		return listItem;
 	}
 	
