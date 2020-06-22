@@ -17,8 +17,6 @@ import com.app.assignment.model.Story;
 import com.app.assignment.proxy.service.HackerNewsProxyService;
 import com.app.assignment.service.StoryService;
 import com.app.assignment.service.UserService;
-import com.app.assignment.util.JsonConverter;
-import com.google.gson.Gson;
 
 @Service
 public class StoryServiceImpl implements StoryService {
@@ -38,7 +36,6 @@ public class StoryServiceImpl implements StoryService {
 	@Override
 	public List<Story> getTopStories() throws InterruptedException {
 		logger.info("Enter: StoryServiceImpl.getTopStories");
-		Gson gson = JsonConverter.getGson();
 		List<Story> list = new ArrayList<>();
 		List<Integer> topIds = hackerNewsProxyService.getTopStories();
 		System.out.print(topIds);

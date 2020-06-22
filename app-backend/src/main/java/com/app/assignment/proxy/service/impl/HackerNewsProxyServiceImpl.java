@@ -15,7 +15,6 @@ import com.app.assignment.model.Story;
 import com.app.assignment.model.User;
 import com.app.assignment.proxy.service.HackerNewsProxyService;
 import com.app.assignment.util.AppConstants;
-import com.app.assignment.util.JsonConverter;
 import com.google.gson.Gson;
 
 @Service
@@ -35,6 +34,9 @@ public class HackerNewsProxyServiceImpl implements HackerNewsProxyService {
 	@Value("${hackernews.top.stories.url}")
 	private String topStoriesURL;
 
+	@Autowired
+	private Gson gson;
+	
 	public List<Integer> getTopStories() {
 		logger.info("Enter HackerNewsProxyServiceImpl.getTopStories");
 		List<Integer> result = null;
@@ -43,14 +45,12 @@ public class HackerNewsProxyServiceImpl implements HackerNewsProxyService {
 		} catch (Exception e) {
 			logger.error("Error while getting list of top stories from hacker news api", e);
 		}
-		logger.info("Successfully fetched top stories from hacker news api");
 		logger.info("Exit HackerNewsProxyServiceImpl.getTopStories");
 		return result;
 	}
 
 	public User getUserDetails(String id) {
 		logger.info("Enter: HackerNewsProxyServiceImpl.getUserDetails-[{}]",id);
-		Gson gson = JsonConverter.getGson();
 		User user = null;
 		try {
 			String url = userURL + id + AppConstants.JSON;
@@ -59,7 +59,6 @@ public class HackerNewsProxyServiceImpl implements HackerNewsProxyService {
 		} catch (Exception e) {
 			logger.error("Error while fetching user details from hacker news api", e);
 		}
-		logger.info("Successfully fetched user details from hacker news api");
 		logger.info("Exit: HackerNewsProxyServiceImpl.getUserDetails-[{}]",id);
 		return user;
 	}
@@ -67,7 +66,6 @@ public class HackerNewsProxyServiceImpl implements HackerNewsProxyService {
 	@Override
 	public Item getItem(String id) {
 		logger.info("Enter: HackerNewsProxyServiceImpl.getItem-[{}]",id);
-		Gson gson = JsonConverter.getGson();
 		Item item = null;
 		try {
 			String url = itemURL + id + AppConstants.JSON;
@@ -83,7 +81,6 @@ public class HackerNewsProxyServiceImpl implements HackerNewsProxyService {
 	@Override
 	public Story getStory(String id) {
 		logger.info("Enter: HackerNewsProxyServiceImpl.getStory-[{}]",id);
-		Gson gson = JsonConverter.getGson();
 		Story story = null;
 		try {
 			String url = itemURL + id + AppConstants.JSON;
