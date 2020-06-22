@@ -99,6 +99,12 @@ public class CommentServiceImpl implements CommentService {
 		return 0;
 	}
 
+	/**
+	 *  Store count of total number of child comments in childCommentsCount
+	 *  
+	 * @param story
+	 * @param childCommentsCount
+	 */
 	private void executeChildTasks(Item story, Map<Integer, Integer> childCommentsCount) {
 		CountDownLatch latch = new CountDownLatch(story.getKids().size());
 		for (Integer kid : story.getKids()) {
