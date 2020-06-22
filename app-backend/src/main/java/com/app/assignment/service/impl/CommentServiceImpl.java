@@ -1,16 +1,13 @@
 package com.app.assignment.service.impl;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
-import java.util.stream.Collectors;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -25,6 +22,8 @@ import com.app.assignment.repo.ItemRepository;
 import com.app.assignment.service.CommentService;
 import com.app.assignment.service.ItemService;
 import com.app.assignment.service.UserService;
+import com.app.assignment.util.ListUtility;
+import com.app.assignment.util.MapUtility;
 
 @Service
 public class CommentServiceImpl implements CommentService {
@@ -45,35 +44,23 @@ public class CommentServiceImpl implements CommentService {
 	ItemRepository itemRepository;
 
 	@Override
-	public List<Comment> getTopComments(int id) throws InterruptedException {
-		logger.info("Enter: CommentServiceImpl.getTopComments-[{}]", id);
-		Item s = itemService.getItem(String.valueOf(id));
-		Map<Integer, Integer> counts = new ConcurrentHashMap<>();
-		CountDownLatch latch = new CountDownLatch(s.getKids().size());
-		for (Integer i : s.getKids()) {
-			executor.submit(() -> {
-				int count = 0;
-				count += getTotalChildComments(i);
-				counts.put(i, count);
-				latch.countDown();
-			});
-
-		}
-		latch.await();
-		Map<Integer, Integer> sortedByValue = counts.entrySet().stream()
-				.sorted(Map.Entry.<Integer, Integer>comparingByValue().reversed())
-				.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
-		List<Integer> itemIds = sortedByValue.keySet().stream().collect(Collectors.toList()).subList(0, 10);
-		List<Comment> listItem = new ArrayList<>();
-		for (Integer i : itemIds) {
+	public List<Comment> getTopComments(int storyId) throws InterruptedException {
+		logger.info("Enter: CommentServiceImpl.getTopComments-[{}]", storyId);
+		List<Comment> parentCommentList = new ArrayList<>();
+		Map<Integer, Integer> childCommentsCount = new ConcurrentHashMap<>();
+		Item storyItem = itemService.getItem(String.valueOf(storyId));
+		executeChildTasks(storyItem, childCommentsCount);
+		Map<Integer, Integer> sortedChildCommentsCount = MapUtility.sortByValueDesc(childCommentsCount);
+		List<Integer> topParentCommentIdList = ListUtility.convertMapKeysToList(sortedChildCommentsCount).subList(0,10);
+		for (Integer i : topParentCommentIdList) {
 			Item item = itemRepository.getItem(String.valueOf(i));
 			if (item != null) {
 				Comment comment = getComment(item);
-				listItem.add(comment);
+				parentCommentList.add(comment);
 			}
 		}
-		logger.info("Exit: CommentServiceImpl.getTopComments-[{}]", id);
-		return listItem;
+		logger.info("Exit: CommentServiceImpl.getTopComments-[{}]", storyId);
+		return parentCommentList;
 	}
 
 	@Override
@@ -93,22 +80,41 @@ public class CommentServiceImpl implements CommentService {
 	public int getTotalChildComments(int id) {
 		logger.info("Enter: CommentServiceImpl.getTotalChildComments-[{}]", id);
 		try {
+			int count = 0;
 			Future<Map<String, List<Integer>>> future = itemService.getItemKids(id);
-			Map<String, List<Integer>> h = future.get();
-			int c = 0;
-			if (h.get(String.valueOf(id)) != null && !h.get(String.valueOf(id)).isEmpty()) {
-				c += h.get(String.valueOf(id)).size();
-				for (Integer i : h.get(String.valueOf(id))) {
-					c += getTotalChildComments(i);
+			Map<String, List<Integer>> itemKids = future.get();
+			List<Integer> kids = itemKids.get(String.valueOf(id));
+			if (kids != null && !kids.isEmpty()) {
+				count += kids.size();
+				for (Integer i : kids) {
+					count += getTotalChildComments(i);
 				}
-				return c;
+				logger.info("Exit: CommentServiceImpl.getTotalChildComments-[{}]", id);
+				return count;
 			}
 		} catch (InterruptedException | ExecutionException e) {
 			logger.error("CommentServiceImpl.getTotalChildComments-[{}]", id, e);
 		}
 		logger.info("Exit: CommentServiceImpl.getTotalChildComments-[{}]", id);
 		return 0;
-
 	}
 
+	private void executeChildTasks(Item story, Map<Integer, Integer> childCommentsCount) {
+		CountDownLatch latch = new CountDownLatch(story.getKids().size());
+		for (Integer kid : story.getKids()) {
+			executor.submit(() -> {
+				int count = getTotalChildComments(kid);
+				childCommentsCount.put(kid, count);
+				latch.countDown();
+			});
+
+		}
+		try {
+			latch.await();
+		} catch (InterruptedException e) {
+			logger.error("CommentServiceImpl.executeChildTasks ",e);
+		}
+	}
+	
+	
 }
