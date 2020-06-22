@@ -21,152 +21,94 @@ import org.springframework.stereotype.Service;
 import com.app.assignment.model.Comment;
 import com.app.assignment.model.Item;
 import com.app.assignment.model.User;
-import com.app.assignment.proxy.service.HackerNewsProxyService;
 import com.app.assignment.repo.ItemRepository;
 import com.app.assignment.service.CommentService;
+import com.app.assignment.service.ItemService;
 import com.app.assignment.service.UserService;
-
 
 @Service
 public class CommentServiceImpl implements CommentService {
-	
-	private static Logger logger=LogManager.getLogger();
-	
-	@Autowired
-	HackerNewsProxyService hackerNewsProxyService;
-	
-	@Autowired
-    @Qualifier("cachedThreadPool")
-    ExecutorService executor;
-	
-	@Autowired
-	ItemRepository itemRepository;
-	
+
+	private static Logger logger = LogManager.getLogger();
+
 	@Autowired
 	UserService userService;
 
-	public Future<Map<String, List<Integer>>> calculateAsync(int id) throws InterruptedException {
+	@Autowired
+	ItemService itemService;
 
-		Map<String, List<Integer>> h = new ConcurrentHashMap<>();
+	@Autowired
+	@Qualifier("cachedThreadPool")
+	ExecutorService executor;
 
-		CompletableFuture<Map<String, List<Integer>>> completableFuture = CompletableFuture.supplyAsync(() -> {
-
-			Item childComment = hackerNewsProxyService.getItem(String.valueOf(id));
-
-			if (childComment.getId() != null && childComment.getKids() != null) {
-				h.put(childComment.getId(), childComment.getKids());
-			} else if (childComment.getId() != null && childComment.getKids() == null) {
-				h.put(childComment.getId(), new ArrayList<>());
-			}
-
-			itemRepository.addItem(childComment.getId(), childComment);
-			
-			return h;
-
-		},executor);
-
-		return completableFuture;
-	}
+	@Autowired
+	ItemRepository itemRepository;
 
 	@Override
 	public List<Comment> getTopComments(int id) throws InterruptedException {
-		
-		Item s = hackerNewsProxyService.getItem(String.valueOf(id));
-
-		System.out.println(s);
-		
-		Map<Integer,Integer> counts=new ConcurrentHashMap<>();
-
+		logger.info("Enter: CommentServiceImpl.getTopComments-[{}]", id);
+		Item s = itemService.getItem(String.valueOf(id));
+		Map<Integer, Integer> counts = new ConcurrentHashMap<>();
 		CountDownLatch latch = new CountDownLatch(s.getKids().size());
 		for (Integer i : s.getKids()) {
-
-			executor.submit(()->{
-				try {
-					int count = 0;
-					count+=loop(i);
-					counts.put(i, count);					
-					System.out.println("count>>>"+count);
-					latch.countDown();
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
+			executor.submit(() -> {
+				int count = 0;
+				count += getTotalChildComments(i);
+				counts.put(i, count);
+				latch.countDown();
 			});
-			
+
 		}
 		latch.await();
-		//executor.shutdown();
-		System.out.println("------------------------------------");
-		
-		Map<Integer, Integer> sortedByValue = counts.entrySet().stream().sorted(Map.Entry.<Integer, Integer>comparingByValue().reversed()).collect(Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
-
-		List<Integer> itemIds=sortedByValue.keySet().stream().collect(Collectors.toList()).subList(0, 10);
-		
-		List<Comment> listItem=new ArrayList<>();
-		for (Integer i: itemIds) {
-			Item item=itemRepository.getItem(String.valueOf(i));	
-			
-			if(item!=null)
-			{
-				Comment comment=getComment(item);
+		Map<Integer, Integer> sortedByValue = counts.entrySet().stream()
+				.sorted(Map.Entry.<Integer, Integer>comparingByValue().reversed())
+				.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+		List<Integer> itemIds = sortedByValue.keySet().stream().collect(Collectors.toList()).subList(0, 10);
+		List<Comment> listItem = new ArrayList<>();
+		for (Integer i : itemIds) {
+			Item item = itemRepository.getItem(String.valueOf(i));
+			if (item != null) {
+				Comment comment = getComment(item);
 				listItem.add(comment);
-	
-				System.out.println("Redis->"+comment);
 			}
-			else {
-				System.out.println("Redis->"+item);
-			}
-			
 		}
-		
-		System.out.println("count size: "+s.getKids().size());
-		System.out.println("counts size: "+counts.size());
-				
+		logger.info("Exit: CommentServiceImpl.getTopComments-[{}]", id);
 		return listItem;
 	}
-	
-	
-	private Comment getComment(Item item)
-	{
 
-		Comment comment=new Comment();
-		
-		User user=userService.getUserDetails(item.getBy());
-
+	@Override
+	public Comment getComment(Item item) {
+		logger.info("Enter: CommentServiceImpl.getComment-[{}]", item.getId());
+		Comment comment = new Comment();
+		User user = userService.getUserDetails(item.getBy());
 		comment.setId(item.getId());
 		comment.setText(item.getText());
 		comment.setUser(user);
-		
+		logger.info("Exit: CommentServiceImpl.getComment-[{}]", item.getId());
 		return comment;
-		
+
 	}
 
-	private int loop(int kid) throws InterruptedException {
-
-		Future<Map<String, List<Integer>>> future = calculateAsync(kid);
+	@Override
+	public int getTotalChildComments(int id) {
+		logger.info("Enter: CommentServiceImpl.getTotalChildComments-[{}]", id);
 		try {
-
+			Future<Map<String, List<Integer>>> future = itemService.getItemKids(id);
 			Map<String, List<Integer>> h = future.get();
-			
 			int c = 0;
-
-			if (h.get(String.valueOf(kid)) != null && !h.get(String.valueOf(kid)).isEmpty()) {
-
-				c += h.get(String.valueOf(kid)).size();
-
-				System.out.println("c=="+c+" -->" + future.get());
-
-				for (Integer i : h.get(String.valueOf(kid))) {
-					c+=loop(i);
+			if (h.get(String.valueOf(id)) != null && !h.get(String.valueOf(id)).isEmpty()) {
+				c += h.get(String.valueOf(id)).size();
+				for (Integer i : h.get(String.valueOf(id))) {
+					c += getTotalChildComments(i);
 				}
-				
 				return c;
-
-			} 
+			}
 		} catch (InterruptedException | ExecutionException e) {
-
+			logger.error("CommentServiceImpl.getTotalChildComments-[{}]", id, e);
 		}
+		logger.info("Exit: CommentServiceImpl.getTotalChildComments-[{}]", id);
 		return 0;
+
 	}
 
-		
 }
