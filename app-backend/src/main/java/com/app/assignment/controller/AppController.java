@@ -1,8 +1,9 @@
 package com.app.assignment.controller;
 
 import java.util.List;
-import java.util.logging.Logger;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,7 +19,7 @@ import com.app.assignment.util.AppConstants;
 @RestController
 public class AppController {
 	
-	Logger logger=Logger.getLogger("AppController");
+	private static Logger logger=LogManager.getLogger();
 
 	@Autowired
 	AppService appService;
@@ -31,6 +32,7 @@ public class AppController {
 		List<Story> list=appService.getTopStories();
 		response.setTotal(list.size());
 		response.setStories(list);
+		logger.info("Response="+response);
 		return response;
 	}
 	
