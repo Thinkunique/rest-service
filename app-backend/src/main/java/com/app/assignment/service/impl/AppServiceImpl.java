@@ -26,6 +26,11 @@ public class AppServiceImpl implements AppService {
 	@Autowired
 	CommentService commentService;
 
+	/**
+	 *  This service is used to fetch the top 10 parent comments
+	 *  on given story.
+	 *  
+	 * */
 	@Override
 	@Cacheable(value = "ten-minute-cache", key = "'CommentCache'+#storyId")
 	public List<Comment> getComments(int storyId) {
@@ -40,6 +45,12 @@ public class AppServiceImpl implements AppService {
 		return list;
 	}
 
+	
+	/**
+	 *  This service is used to fetch the top 10 stories
+	 *  based on score.
+	 *  
+	 * */
 	@Override
 	@Cacheable(value = "ten-minute-cache", key = "'TopStory'")
 	public List<Story> getTopStories() {
@@ -56,6 +67,11 @@ public class AppServiceImpl implements AppService {
 		return resultList;
 	}
 
+	/**
+	 *  
+	 *  This service is used to fetch the top past stories.
+	 *
+	 * */
 	@Override
 	@Cacheable(value = "ten-minute-cache", key = "'PastStory'")
 	public List<Story> getPastStories() {
