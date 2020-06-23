@@ -12,3 +12,4 @@ App Features:-
 3) Abiltity to save and retrieve data from redis datastore.
 4) Ability to run as microservice.
 5) Built on spring boot latest version 2.3.1.
+6) Integrated swagger-api.
