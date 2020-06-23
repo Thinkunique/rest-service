@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.web.client.RestTemplate;
 
+import com.app.assignment.proxy.service.HackerNewsProxyService;
 import com.app.assignment.service.UserService;
 
 @Profile("test")
@@ -24,6 +25,11 @@ public class AppTestConfiguration {
 	@Bean
 	public RestTemplate restTemplate() {
 		return Mockito.mock(RestTemplate.class);
+	}
+	
+	@Bean
+	public HackerNewsProxyService hackerNewsProxyService() {
+		return Mockito.mock(HackerNewsProxyService.class);
 	}
 
 }

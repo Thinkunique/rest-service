@@ -31,16 +31,28 @@ public class CommentServiceTest {
  
     @Test
     public void whenCommentUsernameIsProvided_thenRetrievedCommentUserIdIsCorrect() {
+    	Item item=getCommentItem();
+    	User user=getUser();
+    	Mockito.when(userService.getUserDetails(item.getBy())).thenReturn(user);
+    	Comment comment=commentService.getComment(item);
+    	assertEquals(user.getId(),comment.getUser().getId());
+    }
+    
+    private Item getCommentItem()
+    {
     	Item item=new Item();
     	item.setBy("xnbh");
     	item.setText("This is a test comment");
     	item.setId("212");
+    	return item;
+    }
+    
+    private User getUser()
+    {
     	User user=new User();
     	user.setId("1212");
     	user.setAge(21);
-    	Mockito.when(userService.getUserDetails(item.getBy())).thenReturn(user);
-    	Comment comment=commentService.getComment(item);
-    	assertEquals(user.getId(),comment.getUser().getId());
+    	return user;
     }
 	
 }
