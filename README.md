@@ -11,3 +11,4 @@ App Features:-
 2) Ability to cache the service response for 10 minutes.
 3) Abiltity to save data in redis datastore.
 4) Ability to run as microservice.
+5) Built on spring boot latest version 2.3.1.
