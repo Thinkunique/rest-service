@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.app.assignment.exception.CommentNotFoundException;
+import com.app.assignment.exception.ThreadExecutionException;
 import com.app.assignment.model.Comment;
 import com.app.assignment.model.Item;
 import com.app.assignment.model.User;
@@ -49,7 +50,7 @@ public class CommentServiceImpl implements CommentService {
 	 * This method retrieves top 10 comments on given story.
 	 */
 	@Override
-	public List<Comment> getTopComments(int storyId) throws InterruptedException {
+	public List<Comment> getTopComments(int storyId) {
 		logger.info("Enter: CommentServiceImpl.getTopComments-[{}]", storyId);
 		List<Comment> parentCommentList = new ArrayList<>();
 		Map<Integer, Integer> childCommentsCount = new ConcurrentHashMap<>();
@@ -112,6 +113,7 @@ public class CommentServiceImpl implements CommentService {
 			}
 		} catch (InterruptedException | ExecutionException e) {
 			logger.error("CommentServiceImpl.getTotalChildComments-[{}]", id, e);
+			throw new ThreadExecutionException(e.getMessage());
 		}
 		logger.info("Exit: CommentServiceImpl.getTotalChildComments-[{}]", id);
 		return 0;
@@ -143,6 +145,7 @@ public class CommentServiceImpl implements CommentService {
 			latch.await();
 		} catch (InterruptedException e) {
 			logger.error("CommentServiceImpl.executeChildTasks ", e);
+			throw new ThreadExecutionException(e.getMessage());
 		}
 	}
 

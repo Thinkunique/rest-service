@@ -73,11 +73,16 @@ public class ItemServiceImpl implements ItemService {
 		return item;
 	}
 
+	/**
+	 *  This method retrieves the item from hacker news api. 
+	 *   
+	 * */
 	private Item getChildCommentItem(int id) {
 		Item childComment = null;
 		try {
 			childComment = hackerNewsProxyService.getItem(String.valueOf(id));
 		} catch (ItemNotFoundException e) {
+			logger.error("Item not found",e);
 			throw new CommentNotFoundException("Comment Not Found: " + id);
 		}
 		return childComment;

@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import com.app.assignment.exception.ThreadExecutionException;
 import com.app.assignment.model.Story;
 import com.app.assignment.proxy.service.HackerNewsProxyService;
 import com.app.assignment.service.StoryService;
@@ -35,12 +36,12 @@ public class StoryServiceImpl implements StoryService {
 	UserService userService;
 
 	/**
-	 *  This method retrieves each story details by using story id 
-	 *  returned by hacker new api. 
+	 * This method retrieves each story details by using story id returned by hacker
+	 * new api.
 	 * 
-	 * */
+	 */
 	@Override
-	public List<Story> getTopStories() throws InterruptedException {
+	public List<Story> getTopStories() {
 		logger.info("Enter: StoryServiceImpl.getTopStories");
 		List<Story> list = new ArrayList<>();
 		List<Integer> topIds = hackerNewsProxyService.getTopStories();
@@ -53,15 +54,20 @@ public class StoryServiceImpl implements StoryService {
 			});
 
 		}
-		latch.await();
+		try {
+			latch.await();
+		} catch (InterruptedException e) {
+			logger.error("latch error",e);
+			throw new ThreadExecutionException(e.getMessage());
+		}
 		logger.info("Exit: StoryServiceImpl.getTopStories");
 		return list;
 	}
 
 	/**
-	 *  This method sort the story list in desc order by score. 
+	 * This method sort the story list in desc order by score.
 	 * 
-	 * */
+	 */
 	@Override
 	public List<Story> sortTopStories(List<Story> list) {
 		logger.info("Enter: StoryServiceImpl.sortTopStories");

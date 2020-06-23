@@ -1,9 +1,5 @@
 package com.app.assignment.service.impl;
 
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.Period;
-import java.time.ZoneId;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -14,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import com.app.assignment.exception.ThreadExecutionException;
 import com.app.assignment.model.User;
 import com.app.assignment.proxy.service.HackerNewsProxyService;
 import com.app.assignment.service.UserService;
@@ -48,6 +45,7 @@ public class UserServiceImpl implements UserService {
 			user = completableFuture.get();
 		} catch (InterruptedException | ExecutionException e) {
 			logger.error("Error while fetching user details-[{}]",id, e);
+			throw new ThreadExecutionException(e.getMessage());
 		}
 		logger.info("Exit: UserServiceImpl.getUserDetails-[{}]",id);
 		return user;

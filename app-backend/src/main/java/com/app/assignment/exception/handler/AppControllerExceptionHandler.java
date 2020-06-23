@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import com.app.assignment.exception.CommentNotFoundException;
 import com.app.assignment.exception.ItemNotFoundException;
+import com.app.assignment.exception.RedisException;
 import com.app.assignment.exception.StoryNotFoundException;
+import com.app.assignment.exception.ThreadExecutionException;
 import com.app.assignment.exception.UserNotFoundException;
 import com.app.assignment.response.CommentResponse;
 import com.app.assignment.response.ItemResponse;
@@ -39,5 +41,17 @@ public class AppControllerExceptionHandler {
 	public ResponseEntity<CommentResponse> handleCommentNotFoundException(CommentNotFoundException ex) {
 		CommentResponse responseMsg = new CommentResponse(ex.getMessage());
 		return new ResponseEntity<CommentResponse>(responseMsg,HttpStatus.NOT_FOUND);
+	}
+	
+	@ExceptionHandler(ThreadExecutionException.class)
+	public ResponseEntity<ItemResponse> handleThreadExecutionException(ThreadExecutionException ex) {
+		ItemResponse responseMsg = new ItemResponse(ex.getMessage());
+		return new ResponseEntity<ItemResponse>(responseMsg,HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+	
+	@ExceptionHandler(RedisException.class)
+	public ResponseEntity<ItemResponse> handleRedisException(RedisException ex) {
+		ItemResponse responseMsg = new ItemResponse(ex.getMessage());
+		return new ResponseEntity<ItemResponse>(responseMsg,HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 }

@@ -7,7 +7,7 @@ import com.app.assignment.model.Item;
 
 public interface CommentService {
 
-	public List<Comment> getTopComments(int storyId) throws InterruptedException;
+	public List<Comment> getTopComments(int storyId);
 	
 	public Comment getComment(Item item);
 	

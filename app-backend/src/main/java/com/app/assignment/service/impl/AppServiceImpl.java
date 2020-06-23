@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
+import com.app.assignment.exception.ThreadExecutionException;
 import com.app.assignment.model.Comment;
 import com.app.assignment.model.Story;
 import com.app.assignment.service.AppService;
@@ -36,11 +37,7 @@ public class AppServiceImpl implements AppService {
 	public List<Comment> getComments(int storyId) {
 		logger.info("Enter AppServiceImpl.getComments-[{}]",storyId);
 		List<Comment> list = null;
-		try {
-			list = commentService.getTopComments(storyId);
-		} catch (InterruptedException e) {
-			logger.error("Error while retrieving comment-[{}]",storyId,e);
-		}
+		list = commentService.getTopComments(storyId);
 		logger.info("Enter AppServiceImpl.getComments-[{}]",storyId);
 		return list;
 	}
@@ -56,13 +53,9 @@ public class AppServiceImpl implements AppService {
 	public List<Story> getTopStories() {
 		logger.info("Enter AppServiceImpl.getTopStories");
 		List<Story> resultList = null;
-		try {
-			List<Story> list = storyService.getTopStories();
-			List<Story> sortList = storyService.sortTopStories(list);
-			resultList = ListUtility.subListByRange(sortList, 0, 10);
-		} catch (InterruptedException e) {
-			logger.error("Error while retrieving top stories", e);
-		}
+		List<Story> list = storyService.getTopStories();
+		List<Story> sortList = storyService.sortTopStories(list);
+		resultList = ListUtility.subListByRange(sortList, 0, 10);
 		logger.info("Enter AppServiceImpl.getTopStories");
 		return resultList;
 	}
@@ -76,12 +69,7 @@ public class AppServiceImpl implements AppService {
 	@Cacheable(value = "ten-minute-cache", key = "'PastStory'")
 	public List<Story> getPastStories() {
 		logger.info("Enter AppServiceImpl.getPastStories");
-		List<Story> list = null;
-		try {
-			list = storyService.getTopStories();
-		} catch (InterruptedException e) {
-			logger.error("Error while retrieving past stories", e);
-		}
+		List<Story> list = storyService.getTopStories();
 		logger.info("Enter AppServiceImpl.getPastStories");
 		return list;
 	}
