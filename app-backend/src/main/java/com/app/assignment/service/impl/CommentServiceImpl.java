@@ -45,6 +45,9 @@ public class CommentServiceImpl implements CommentService {
 	@Autowired
 	ItemRepository itemRepository;
 
+	/**
+	 * This method retrieves top 10 comments on given story.
+	 */
 	@Override
 	public List<Comment> getTopComments(int storyId) throws InterruptedException {
 		logger.info("Enter: CommentServiceImpl.getTopComments-[{}]", storyId);
@@ -55,8 +58,8 @@ public class CommentServiceImpl implements CommentService {
 		Map<Integer, Integer> sortedChildCommentsCount = MapUtility.sortByValueDesc(childCommentsCount);
 		List<Integer> topParentCommentIdList = ListUtility.convertMapKeysToList(sortedChildCommentsCount);
 		if (topParentCommentIdList.size() >= AppConstants.COMMENTS_MAX_SIZE) {
-			topParentCommentIdList = topParentCommentIdList.subList(AppConstants.COMMENTS_MIN_SIZE, AppConstants.COMMENTS_MAX_SIZE);
-
+			topParentCommentIdList = topParentCommentIdList.subList(AppConstants.COMMENTS_MIN_SIZE,
+					AppConstants.COMMENTS_MAX_SIZE);
 		}
 		for (Integer i : topParentCommentIdList) {
 			Item item = itemRepository.getItem(String.valueOf(i));
@@ -69,6 +72,10 @@ public class CommentServiceImpl implements CommentService {
 		return parentCommentList;
 	}
 
+	/**
+	 * This method retrieves the comment with user details who created it.
+	 * 
+	 */
 	@Override
 	public Comment getComment(Item item) {
 		logger.info("Enter: CommentServiceImpl.getComment-[{}]", item.getId());
@@ -82,6 +89,11 @@ public class CommentServiceImpl implements CommentService {
 
 	}
 
+	/**
+	 * This method recursively counts the total number of child comments for given
+	 * parent comment.
+	 * 
+	 */
 	@Override
 	public int getTotalChildComments(int id) {
 		logger.info("Enter: CommentServiceImpl.getTotalChildComments-[{}]", id);
@@ -106,7 +118,8 @@ public class CommentServiceImpl implements CommentService {
 	}
 
 	/**
-	 * Store count of total number of child comments in childCommentsCount
+	 * This method creates sub-tasks for counting total number of child comments for
+	 * given story.
 	 * 
 	 * @param story
 	 * @param childCommentsCount

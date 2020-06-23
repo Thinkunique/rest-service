@@ -34,12 +34,16 @@ public class StoryServiceImpl implements StoryService {
 	@Autowired
 	UserService userService;
 
+	/**
+	 *  This method retrieves each story details by using story id 
+	 *  returned by hacker new api. 
+	 * 
+	 * */
 	@Override
 	public List<Story> getTopStories() throws InterruptedException {
 		logger.info("Enter: StoryServiceImpl.getTopStories");
 		List<Story> list = new ArrayList<>();
 		List<Integer> topIds = hackerNewsProxyService.getTopStories();
-		System.out.print(topIds);
 		CountDownLatch latch = new CountDownLatch(topIds.size());
 		for (Integer i : topIds) {
 			executor.submit(() -> {
@@ -54,6 +58,10 @@ public class StoryServiceImpl implements StoryService {
 		return list;
 	}
 
+	/**
+	 *  This method sort the story list in desc order by score. 
+	 * 
+	 * */
 	@Override
 	public List<Story> sortTopStories(List<Story> list) {
 		logger.info("Enter: StoryServiceImpl.sortTopStories");

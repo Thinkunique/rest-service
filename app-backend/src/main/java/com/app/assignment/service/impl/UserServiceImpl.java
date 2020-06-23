@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 import com.app.assignment.model.User;
 import com.app.assignment.proxy.service.HackerNewsProxyService;
 import com.app.assignment.service.UserService;
+import com.app.assignment.util.DateUtility;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -30,16 +31,16 @@ public class UserServiceImpl implements UserService {
 	@Qualifier("cachedThreadPool")
 	ExecutorService executor;
 
+	/**
+	 *  This method retrieves user details from hacker news api
+	 *  and returns user with calculated age.
+	 */
 	@Override
 	public User getUserDetails(String id) {
 		logger.info("Enter: UserServiceImpl.getUserDetails-[{}]",id);
 		CompletableFuture<User> completableFuture = CompletableFuture.supplyAsync(() -> {
 			User user = hackerNewsProxyService.getUserDetails(id);
-			LocalDate today = LocalDate.now();
-			LocalDate birthday = Instant.ofEpochMilli(user.getCreated().getTime()).atZone(ZoneId.systemDefault())
-					.toLocalDate();
-			Period p = Period.between(birthday, today);
-			user.setAge(p.getYears());
+			user.setAge(DateUtility.getAge(user.getCreated().getTime()));
 			return user;
 		}, executor);
 		User user = null;

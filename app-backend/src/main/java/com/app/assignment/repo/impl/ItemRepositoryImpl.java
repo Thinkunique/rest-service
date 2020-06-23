@@ -18,7 +18,7 @@ public class ItemRepositoryImpl implements ItemRepository {
 		try {
 			redisTemplate.opsForHash().put("ITEM", id, item);
 		} catch (Exception e) {
-			System.out.println(e);
+			
 		}
 	}
 

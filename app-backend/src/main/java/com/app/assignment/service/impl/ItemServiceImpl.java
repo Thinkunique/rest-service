@@ -36,24 +36,35 @@ public class ItemServiceImpl implements ItemService {
 	@Autowired
 	ItemRepository itemRepository;
 
+	/**
+	 *  This method retrieves the comment using id 
+	 *  and saves it to Redis datastore and 
+	 *  returns Future of count of kids of retrieved comment. 
+	 *   
+	 * */
 	@Override
 	public Future<Map<String, List<Integer>>> getItemKids(int id) throws InterruptedException {
 		logger.info("Enter: ItemServiceImpl.getItemKids-[{}]", id);
-		Map<String, List<Integer>> h = new ConcurrentHashMap<>();
+		Map<String, List<Integer>> kidCount = new ConcurrentHashMap<>();
 		CompletableFuture<Map<String, List<Integer>>> completableFuture = CompletableFuture.supplyAsync(() -> {
 			Item childComment = getChildCommentItem(id);
 			if (childComment.getId() != null && childComment.getKids() != null) {
-				h.put(childComment.getId(), childComment.getKids());
+				kidCount.put(childComment.getId(), childComment.getKids());
 			} else if (childComment.getId() != null && childComment.getKids() == null) {
-				h.put(childComment.getId(), new ArrayList<>());
+				kidCount.put(childComment.getId(), new ArrayList<>());
 			}
 			itemRepository.addItem(childComment.getId(), childComment);
-			return h;
+			return kidCount;
 		}, executor);
 		logger.info("Enter: ItemServiceImpl.getItemKids-[{}]", id);
 		return completableFuture;
 	}
-
+	
+	
+	/**
+	 *  This method retrieves the item from hacker news api. 
+	 *   
+	 * */
 	@Override
 	public Item getItem(String id) {
 		logger.info("Enter: ItemServiceImpl.getItem-[{}]", id);
