@@ -1,5 +1,7 @@
 package com.app.assignment.exception.handler;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -13,29 +15,29 @@ import com.app.assignment.response.StoryResponse;
 import com.app.assignment.response.UserResponse;
 
 @RestControllerAdvice
-public class AppControllerExceptiionHandler {
+public class AppControllerExceptionHandler {
 
 	@ExceptionHandler(ItemNotFoundException.class)
-	public ItemResponse handleItemNotFoundException(ItemNotFoundException ex) {
+	public ResponseEntity<ItemResponse> handleItemNotFoundException(ItemNotFoundException ex) {
 		ItemResponse responseMsg = new ItemResponse(ex.getMessage());
-		return responseMsg;
+		return new ResponseEntity<ItemResponse>(responseMsg,HttpStatus.NOT_FOUND);
 	}
 
 	@ExceptionHandler(UserNotFoundException.class)
-	public UserResponse handleUserNotFoundException(UserNotFoundException ex) {
+	public ResponseEntity<UserResponse> handleUserNotFoundException(UserNotFoundException ex) {
 		UserResponse responseMsg = new UserResponse(ex.getMessage());
-		return responseMsg;
+		return  new ResponseEntity<UserResponse>(responseMsg,HttpStatus.NOT_FOUND);
 	}
 
 	@ExceptionHandler(StoryNotFoundException.class)
-	public StoryResponse handleStoryNotFoundException(StoryNotFoundException ex) {
+	public ResponseEntity<StoryResponse> handleStoryNotFoundException(StoryNotFoundException ex) {
 		StoryResponse responseMsg = new StoryResponse(ex.getMessage());
-		return responseMsg;
+		return new ResponseEntity<StoryResponse>(responseMsg,HttpStatus.NOT_FOUND);
 	}
 
 	@ExceptionHandler(CommentNotFoundException.class)
-	public CommentResponse handleCommentNotFoundException(CommentNotFoundException ex) {
+	public ResponseEntity<CommentResponse> handleCommentNotFoundException(CommentNotFoundException ex) {
 		CommentResponse responseMsg = new CommentResponse(ex.getMessage());
-		return responseMsg;
+		return new ResponseEntity<CommentResponse>(responseMsg,HttpStatus.NOT_FOUND);
 	}
 }
