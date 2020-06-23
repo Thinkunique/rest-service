@@ -6,9 +6,29 @@ import com.app.assignment.model.Comment;
 
 public class CommentResponse {
 
+	String status;
+
 	int total;
-	
+
 	List<Comment> comments;
+
+	public CommentResponse(String status) {
+		this.status = status;
+	}
+
+	/**
+	 * @return the status
+	 */
+	public String getStatus() {
+		return status;
+	}
+
+	/**
+	 * @param status the status to set
+	 */
+	public void setStatus(String status) {
+		this.status = status;
+	}
 
 	/**
 	 * @return the total
@@ -37,7 +57,5 @@ public class CommentResponse {
 	public void setComments(List<Comment> comments) {
 		this.comments = comments;
 	}
-	
-	
-	
+
 }

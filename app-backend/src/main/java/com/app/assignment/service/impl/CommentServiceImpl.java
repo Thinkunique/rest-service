@@ -15,6 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import com.app.assignment.exception.CommentNotFoundException;
+import com.app.assignment.exception.ItemNotFoundException;
+import com.app.assignment.exception.StoryNotFoundException;
 import com.app.assignment.model.Comment;
 import com.app.assignment.model.Item;
 import com.app.assignment.model.User;
@@ -51,7 +54,8 @@ public class CommentServiceImpl implements CommentService {
 		Item storyItem = itemService.getItem(String.valueOf(storyId));
 		executeChildTasks(storyItem, childCommentsCount);
 		Map<Integer, Integer> sortedChildCommentsCount = MapUtility.sortByValueDesc(childCommentsCount);
-		List<Integer> topParentCommentIdList = ListUtility.convertMapKeysToList(sortedChildCommentsCount).subList(0,10);
+		List<Integer> topParentCommentIdList = ListUtility.convertMapKeysToList(sortedChildCommentsCount).subList(0,
+				10);
 		for (Integer i : topParentCommentIdList) {
 			Item item = itemRepository.getItem(String.valueOf(i));
 			if (item != null) {
@@ -100,12 +104,18 @@ public class CommentServiceImpl implements CommentService {
 	}
 
 	/**
-	 *  Store count of total number of child comments in childCommentsCount
-	 *  
+	 * Store count of total number of child comments in childCommentsCount
+	 * 
 	 * @param story
 	 * @param childCommentsCount
 	 */
 	private void executeChildTasks(Item story, Map<Integer, Integer> childCommentsCount) {
+		
+		if(story.getKids()==null||story.getKids().isEmpty())
+		{
+			throw new CommentNotFoundException("There are no comments on given story: "+story.getId());
+		}
+		
 		CountDownLatch latch = new CountDownLatch(story.getKids().size());
 		for (Integer kid : story.getKids()) {
 			executor.submit(() -> {
@@ -118,9 +128,8 @@ public class CommentServiceImpl implements CommentService {
 		try {
 			latch.await();
 		} catch (InterruptedException e) {
-			logger.error("CommentServiceImpl.executeChildTasks ",e);
+			logger.error("CommentServiceImpl.executeChildTasks ", e);
 		}
 	}
-	
-	
+
 }

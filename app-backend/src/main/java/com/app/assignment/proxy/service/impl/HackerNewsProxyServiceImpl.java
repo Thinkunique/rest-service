@@ -10,6 +10,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import com.app.assignment.exception.ItemNotFoundException;
+import com.app.assignment.exception.StoryNotFoundException;
+import com.app.assignment.exception.UserNotFoundException;
 import com.app.assignment.model.Item;
 import com.app.assignment.model.Story;
 import com.app.assignment.model.User;
@@ -36,60 +39,63 @@ public class HackerNewsProxyServiceImpl implements HackerNewsProxyService {
 
 	@Autowired
 	private Gson gson;
-	
+
 	public List<Integer> getTopStories() {
 		logger.info("Enter HackerNewsProxyServiceImpl.getTopStories");
 		List<Integer> result = null;
-		try {
-			result = (List<Integer>) restTemplate.getForObject(topStoriesURL, Object.class);
-		} catch (Exception e) {
-			logger.error("Error while getting list of top stories from hacker news api", e);
+		result = (List<Integer>) restTemplate.getForObject(topStoriesURL, Object.class);
+		if (result == null) {
+			logger.error("top stories not found from hacker news api");
+			throw new StoryNotFoundException("Stories Not Found");
 		}
 		logger.info("Exit HackerNewsProxyServiceImpl.getTopStories");
 		return result;
 	}
 
 	public User getUserDetails(String id) {
-		logger.info("Enter: HackerNewsProxyServiceImpl.getUserDetails-[{}]",id);
+		logger.info("Enter: HackerNewsProxyServiceImpl.getUserDetails-[{}]", id);
 		User user = null;
-		try {
-			String url = userURL + id + AppConstants.JSON;
-			Map m = (Map) restTemplate.getForObject(url, Object.class);
-			user = gson.fromJson(gson.toJson(m, Map.class), User.class);
-		} catch (Exception e) {
-			logger.error("Error while fetching user details from hacker news api", e);
+		String url = userURL + id + AppConstants.JSON;
+		Map response = (Map) restTemplate.getForObject(url, Object.class);
+		if (response == null) {
+			logger.error("user details not found from hacker news api");
+			throw new UserNotFoundException("User not found: " + id);
+		} else {
+			user = gson.fromJson(gson.toJson(response, Map.class), User.class);
 		}
-		logger.info("Exit: HackerNewsProxyServiceImpl.getUserDetails-[{}]",id);
+		logger.info("Exit: HackerNewsProxyServiceImpl.getUserDetails-[{}]", id);
 		return user;
 	}
 
 	@Override
 	public Item getItem(String id) {
-		logger.info("Enter: HackerNewsProxyServiceImpl.getItem-[{}]",id);
+		logger.info("Enter: HackerNewsProxyServiceImpl.getItem-[{}]", id);
 		Item item = null;
-		try {
-			String url = itemURL + id + AppConstants.JSON;
-			Map m = (Map) restTemplate.getForObject(url, Object.class);
-			item = gson.fromJson(gson.toJson(m, Map.class), Item.class);
-		} catch (Exception e) {
-			logger.error("Error while fetching item from hacker news api", e);
+		String url = itemURL + id + AppConstants.JSON;
+		Map response = (Map) restTemplate.getForObject(url, Object.class);
+		if (response == null) {
+			logger.error("Item not found from hacker news api");
+			throw new ItemNotFoundException("Item not found: " + id);
+		} else {
+			item = gson.fromJson(gson.toJson(response, Map.class), Item.class);
 		}
-		logger.info("Exit: HackerNewsProxyServiceImpl.getItem-[{}]",id);
+		logger.info("Exit: HackerNewsProxyServiceImpl.getItem-[{}]", id);
 		return item;
 	}
 
 	@Override
 	public Story getStory(String id) {
-		logger.info("Enter: HackerNewsProxyServiceImpl.getStory-[{}]",id);
+		logger.info("Enter: HackerNewsProxyServiceImpl.getStory-[{}]", id);
 		Story story = null;
-		try {
-			String url = itemURL + id + AppConstants.JSON;
-			Map m = (Map) restTemplate.getForObject(url, Object.class);
-			story = gson.fromJson(gson.toJson(m, Map.class), Story.class);
-		} catch (Exception e) {
-			logger.error("Error while fetching story from hacker news api", e);
+		String url = itemURL + id + AppConstants.JSON;
+		Map response = (Map) restTemplate.getForObject(url, Object.class);
+		if (response == null) {
+			logger.error("Story not found from hacker news api");
+			throw new StoryNotFoundException("Story not found: " + id);
+		} else {
+			story = gson.fromJson(gson.toJson(response, Map.class), Story.class);
 		}
-		logger.info("Exit: HackerNewsProxyServiceImpl.getStory-[{}]",id);
+		logger.info("Exit: HackerNewsProxyServiceImpl.getStory-[{}]", id);
 		return story;
 	}
 

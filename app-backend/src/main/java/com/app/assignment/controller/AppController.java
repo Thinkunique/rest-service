@@ -28,7 +28,7 @@ public class AppController {
 	public StoryResponse getTopStories()
 	{
 		logger.info("Enter: AppController.topStories");
-		StoryResponse response=new StoryResponse();
+		StoryResponse response=new StoryResponse("Successfully retrieved top stories");
 		List<Story> list=appService.getTopStories();
 		response.setTotal(list.size());
 		response.setStories(list);
@@ -40,7 +40,7 @@ public class AppController {
 	public CommentResponse getComments(@PathVariable("storyId") int storyId)
 	{
 		logger.info("Enter: AppController.getComments-[{}]",storyId);
-		CommentResponse response=new CommentResponse();
+		CommentResponse response=new CommentResponse("Successfully retrieved comments");
 		List<Comment> list=appService.getComments(storyId);
 		response.setTotal(list.size());
 		response.setComments(list);
@@ -53,7 +53,7 @@ public class AppController {
 	public StoryResponse getPastStories()
 	{
 		logger.info("Enter: AppController.getPastStories");
-		StoryResponse response=new StoryResponse();
+		StoryResponse response=new StoryResponse("Successfully retrieved past stories");
 		List<Story> list=appService.getPastStories();
 		response.setStories(list);
 		response.setTotal(list.size());

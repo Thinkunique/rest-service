@@ -6,11 +6,30 @@ import com.app.assignment.model.Story;
 
 public class StoryResponse {
 
+	String status;
+
 	int total;
-	
+
 	List<Story> stories;
 
-	
+	public StoryResponse(String status) {
+		this.status = status;
+	}
+
+	/**
+	 * @return the status
+	 */
+	public String getStatus() {
+		return status;
+	}
+
+	/**
+	 * @param status the status to set
+	 */
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
 	/**
 	 * @return the total
 	 */
@@ -38,8 +57,5 @@ public class StoryResponse {
 	public void setStories(List<Story> stories) {
 		this.stories = stories;
 	}
-	
-	
-	
-	
+
 }
