@@ -6,28 +6,31 @@ import com.app.assignment.model.Comment;
 
 public class CommentResponse {
 
-	String status;
+	String message;
 
 	int total;
 
 	List<Comment> comments;
 
-	public CommentResponse(String status) {
-		this.status = status;
+	/**
+	 * @param message
+	 */
+	public CommentResponse(String message) {
+		this.message = message;
 	}
 
 	/**
-	 * @return the status
+	 * @return the message
 	 */
-	public String getStatus() {
-		return status;
+	public String getMessage() {
+		return message;
 	}
 
 	/**
-	 * @param status the status to set
+	 * @param message the message to set
 	 */
-	public void setStatus(String status) {
-		this.status = status;
+	public void setMessage(String message) {
+		this.message = message;
 	}
 
 	/**

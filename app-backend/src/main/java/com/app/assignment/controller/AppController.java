@@ -20,6 +20,7 @@ import com.app.assignment.response.CommentResponse;
 import com.app.assignment.response.StoryResponse;
 import com.app.assignment.service.AppService;
 import com.app.assignment.util.AppConstants;
+import com.app.assignment.util.ResponseUtility;
 
 import io.swagger.annotations.ApiOperation;
 
@@ -33,39 +34,33 @@ public class AppController {
 
 	@GetMapping(AppConstants.TOP_STORIES)
 	@Produces(MediaType.APPLICATION_JSON_VALUE)
-	@ApiOperation(value = "Get Top 10 stories from Hacker News", response = StoryResponse.class)
+	@ApiOperation(value = "Get Top 10 stories list", response = StoryResponse.class)
 	public ResponseEntity<StoryResponse> getTopStories() {
 		logger.info("Enter: AppController.topStories");
 		List<Story> list = appService.getTopStories();
-		StoryResponse response = new StoryResponse("Successfully retrieved top stories");		
-		response.setTotal(list.size());
-		response.setStories(list);
+		StoryResponse response=ResponseUtility.createTopStoryResponse(list);
 		logger.info("Exit: AppController.topStories");
 		return new ResponseEntity<StoryResponse>(response, HttpStatus.OK);
 	}
 
 	@GetMapping(AppConstants.TOP_STORY_COMMENTS)
 	@Produces(MediaType.APPLICATION_JSON_VALUE)
-	@ApiOperation(value = "Get Top 10 comments for given story", response = CommentResponse.class)
+	@ApiOperation(value = "Get Top 10 comments list for given story", response = CommentResponse.class)
 	public ResponseEntity<CommentResponse> getComments(@PathVariable("storyId") int storyId) {
 		logger.info("Enter: AppController.getComments-[{}]", storyId);
-		CommentResponse response = new CommentResponse("Successfully retrieved comments");
 		List<Comment> list = appService.getComments(storyId);
-		response.setTotal(list.size());
-		response.setComments(list);
+		CommentResponse response=ResponseUtility.createCommentResponse(list);
 		logger.info("Exit: AppController.getComments-[{}]", storyId);
 		return new ResponseEntity<CommentResponse>(response, HttpStatus.OK);
 	}
 
 	@GetMapping(AppConstants.PAST_TOP_STORIES)
 	@Produces(MediaType.APPLICATION_JSON_VALUE)
-	@ApiOperation(value = "Get Top past stories from Hacker News", response = StoryResponse.class)
+	@ApiOperation(value = "Get Top past stories list", response = StoryResponse.class)
 	public ResponseEntity<StoryResponse> getPastStories() {
 		logger.info("Enter: AppController.getPastStories");
-		StoryResponse response = new StoryResponse("Successfully retrieved past stories");
 		List<Story> list = appService.getPastStories();
-		response.setStories(list);
-		response.setTotal(list.size());
+		StoryResponse response= ResponseUtility.createPastStoryResponse(list);
 		logger.info("Exit: AppController.getPastStories");
 		return new ResponseEntity<StoryResponse>(response, HttpStatus.OK);
 	}
