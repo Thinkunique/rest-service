@@ -44,16 +44,16 @@ public class AppServiceImpl implements AppService {
 	@Cacheable(value = "ten-minute-cache", key = "'TopStory'")
 	public List<Story> getTopStories() {
 		logger.info("Enter AppServiceImpl.getTopStories");
-		List<Story> sortList = null;
+		List<Story> resultList = null;
 		try {
 			List<Story> list = storyService.getTopStories();
-			sortList = storyService.sortTopStories(list);
-			sortList = ListUtility.subListByRange(list, 0, 10);
+			List<Story> sortList = storyService.sortTopStories(list);
+			resultList = ListUtility.subListByRange(sortList, 0, 10);
 		} catch (InterruptedException e) {
 			logger.error("Error while retrieving top stories", e);
 		}
 		logger.info("Enter AppServiceImpl.getTopStories");
-		return sortList;
+		return resultList;
 	}
 
 	@Override
