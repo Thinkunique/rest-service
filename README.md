@@ -9,6 +9,6 @@ App Features:-
 
 1) Ability to run on docker.
 2) Ability to cache the service response for 10 minutes.
-3) Abiltity to save data in redis datastore.
+3) Abiltity to save and retrieve data from redis datastore.
 4) Ability to run as microservice.
 5) Built on spring boot latest version 2.3.1.
