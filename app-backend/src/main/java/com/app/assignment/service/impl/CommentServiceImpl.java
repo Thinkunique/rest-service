@@ -128,8 +128,9 @@ public class CommentServiceImpl implements CommentService {
 	 * @param childCommentsCount
 	 */
 	private void executeChildTasks(Item story, Map<Integer, Integer> childCommentsCount) {
-		
-		if (story.getKids() == null || story.getKids().isEmpty()) {
+	
+		if (!Optional.fromNullable(story.getKids()).isPresent() || story.getKids().isEmpty()) {
+			logger.error("There are no comments on given story: "+story.getId());
 			throw new CommentNotFoundException("There are no comments on given story: " + story.getId());
 		}
 
