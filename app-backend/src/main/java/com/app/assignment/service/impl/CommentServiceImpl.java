@@ -27,6 +27,7 @@ import com.app.assignment.service.UserService;
 import com.app.assignment.util.AppConstants;
 import com.app.assignment.util.ListUtility;
 import com.app.assignment.util.MapUtility;
+import com.google.common.base.Optional;
 
 @Service
 public class CommentServiceImpl implements CommentService {
@@ -127,7 +128,7 @@ public class CommentServiceImpl implements CommentService {
 	 * @param childCommentsCount
 	 */
 	private void executeChildTasks(Item story, Map<Integer, Integer> childCommentsCount) {
-
+		
 		if (story.getKids() == null || story.getKids().isEmpty()) {
 			throw new CommentNotFoundException("There are no comments on given story: " + story.getId());
 		}

@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
-import com.app.assignment.exception.ThreadExecutionException;
 import com.app.assignment.model.Comment;
 import com.app.assignment.model.Story;
 import com.app.assignment.service.AppService;
@@ -35,10 +34,10 @@ public class AppServiceImpl implements AppService {
 	@Override
 	@Cacheable(value = "ten-minute-cache", key = "'CommentCache'+#storyId")
 	public List<Comment> getComments(int storyId) {
-		logger.info("Enter AppServiceImpl.getComments-[{}]",storyId);
+		logger.info("Enter: AppServiceImpl.getComments-[{}]",storyId);
 		List<Comment> list = null;
 		list = commentService.getTopComments(storyId);
-		logger.info("Enter AppServiceImpl.getComments-[{}]",storyId);
+		logger.info("Exit: AppServiceImpl.getComments-[{}]",storyId);
 		return list;
 	}
 
@@ -51,12 +50,12 @@ public class AppServiceImpl implements AppService {
 	@Override
 	@Cacheable(value = "ten-minute-cache", key = "'TopStory'")
 	public List<Story> getTopStories() {
-		logger.info("Enter AppServiceImpl.getTopStories");
+		logger.info("Enter: AppServiceImpl.getTopStories");
 		List<Story> resultList = null;
 		List<Story> list = storyService.getTopStories();
 		List<Story> sortList = storyService.sortTopStories(list);
 		resultList = ListUtility.subListByRange(sortList, 0, 10);
-		logger.info("Enter AppServiceImpl.getTopStories");
+		logger.info("Exit: AppServiceImpl.getTopStories");
 		return resultList;
 	}
 
@@ -68,9 +67,9 @@ public class AppServiceImpl implements AppService {
 	@Override
 	@Cacheable(value = "ten-minute-cache", key = "'PastStory'")
 	public List<Story> getPastStories() {
-		logger.info("Enter AppServiceImpl.getPastStories");
+		logger.info("Enter: AppServiceImpl.getPastStories");
 		List<Story> list = storyService.getTopStories();
-		logger.info("Enter AppServiceImpl.getPastStories");
+		logger.info("Exit: AppServiceImpl.getPastStories");
 		return list;
 	}
 
