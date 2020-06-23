@@ -27,7 +27,7 @@ public class AppServiceImpl implements AppService {
 	CommentService commentService;
 
 	@Override
-	@Cacheable(value = "ten-minute-cache", key = "'CommentCache'+#id")
+	@Cacheable(value = "ten-minute-cache", key = "'CommentCache'+#storyId")
 	public List<Comment> getComments(int storyId) {
 		logger.info("Enter AppServiceImpl.getComments-[{}]",storyId);
 		List<Comment> list = null;

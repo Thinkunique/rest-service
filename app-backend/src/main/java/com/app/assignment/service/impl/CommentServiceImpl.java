@@ -16,8 +16,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.app.assignment.exception.CommentNotFoundException;
-import com.app.assignment.exception.ItemNotFoundException;
-import com.app.assignment.exception.StoryNotFoundException;
 import com.app.assignment.model.Comment;
 import com.app.assignment.model.Item;
 import com.app.assignment.model.User;
@@ -25,6 +23,7 @@ import com.app.assignment.repo.ItemRepository;
 import com.app.assignment.service.CommentService;
 import com.app.assignment.service.ItemService;
 import com.app.assignment.service.UserService;
+import com.app.assignment.util.AppConstants;
 import com.app.assignment.util.ListUtility;
 import com.app.assignment.util.MapUtility;
 
@@ -54,8 +53,11 @@ public class CommentServiceImpl implements CommentService {
 		Item storyItem = itemService.getItem(String.valueOf(storyId));
 		executeChildTasks(storyItem, childCommentsCount);
 		Map<Integer, Integer> sortedChildCommentsCount = MapUtility.sortByValueDesc(childCommentsCount);
-		List<Integer> topParentCommentIdList = ListUtility.convertMapKeysToList(sortedChildCommentsCount).subList(0,
-				10);
+		List<Integer> topParentCommentIdList = ListUtility.convertMapKeysToList(sortedChildCommentsCount);
+		if (topParentCommentIdList.size() >= AppConstants.COMMENTS_MAX_SIZE) {
+			topParentCommentIdList = topParentCommentIdList.subList(AppConstants.COMMENTS_MIN_SIZE, AppConstants.COMMENTS_MAX_SIZE);
+
+		}
 		for (Integer i : topParentCommentIdList) {
 			Item item = itemRepository.getItem(String.valueOf(i));
 			if (item != null) {
@@ -110,12 +112,11 @@ public class CommentServiceImpl implements CommentService {
 	 * @param childCommentsCount
 	 */
 	private void executeChildTasks(Item story, Map<Integer, Integer> childCommentsCount) {
-		
-		if(story.getKids()==null||story.getKids().isEmpty())
-		{
-			throw new CommentNotFoundException("There are no comments on given story: "+story.getId());
+
+		if (story.getKids() == null || story.getKids().isEmpty()) {
+			throw new CommentNotFoundException("There are no comments on given story: " + story.getId());
 		}
-		
+
 		CountDownLatch latch = new CountDownLatch(story.getKids().size());
 		for (Integer kid : story.getKids()) {
 			executor.submit(() -> {

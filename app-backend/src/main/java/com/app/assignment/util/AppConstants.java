@@ -10,4 +10,8 @@ public class AppConstants {
 	
 	public static final String JSON=".json";
 	
+	public static final Integer COMMENTS_MIN_SIZE=0;
+	
+	public static final Integer COMMENTS_MAX_SIZE=10;
+	
 }

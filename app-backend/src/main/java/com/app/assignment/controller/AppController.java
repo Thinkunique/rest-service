@@ -36,8 +36,8 @@ public class AppController {
 	@ApiOperation(value = "Get Top 10 stories from Hacker News", response = StoryResponse.class)
 	public ResponseEntity<StoryResponse> getTopStories() {
 		logger.info("Enter: AppController.topStories");
-		StoryResponse response = new StoryResponse("Successfully retrieved top stories");
 		List<Story> list = appService.getTopStories();
+		StoryResponse response = new StoryResponse("Successfully retrieved top stories");		
 		response.setTotal(list.size());
 		response.setStories(list);
 		logger.info("Exit: AppController.topStories");
