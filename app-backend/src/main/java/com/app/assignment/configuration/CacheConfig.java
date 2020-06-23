@@ -16,10 +16,10 @@ public class CacheConfig extends CachingConfigurerSupport {
 	@Bean
 	public net.sf.ehcache.CacheManager ehCacheManager() {
 		CacheConfiguration tenSecondCache = new CacheConfiguration();
-		tenSecondCache.setName("ten-second-cache");
+		tenSecondCache.setName("ten-minute-cache");
 		tenSecondCache.setMemoryStoreEvictionPolicy("LRU");
 		tenSecondCache.setMaxEntriesLocalHeap(1000);
-		tenSecondCache.setTimeToLiveSeconds(10);
+		tenSecondCache.setTimeToLiveSeconds(60*10);
 		net.sf.ehcache.config.Configuration config = new net.sf.ehcache.config.Configuration();
 		config.addCache(tenSecondCache);
 		return net.sf.ehcache.CacheManager.newInstance(config);

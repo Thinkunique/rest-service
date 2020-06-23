@@ -26,7 +26,7 @@ public class AppServiceImpl implements AppService {
 	CommentService commentService;
 
 	@Override
-	@Cacheable(value = "ten-second-cache", key = "'CommentCache'+#id")
+	@Cacheable(value = "ten-minute-cache", key = "'CommentCache'+#id")
 	public List<Comment> getComments(int storyId) {
 		logger.info("Enter AppServiceImpl.getComments-[{}]",storyId);
 		List<Comment> list = null;
@@ -40,7 +40,7 @@ public class AppServiceImpl implements AppService {
 	}
 
 	@Override
-	@Cacheable(value = "ten-second-cache", key = "'TopStory'")
+	@Cacheable(value = "ten-minute-cache", key = "'TopStory'")
 	public List<Story> getTopStories() {
 		logger.info("Enter AppServiceImpl.getTopStories");
 		List<Story> sortList = null;
@@ -55,7 +55,7 @@ public class AppServiceImpl implements AppService {
 	}
 
 	@Override
-	@Cacheable(value = "ten-second-cache", key = "'PastStory'")
+	@Cacheable(value = "ten-minute-cache", key = "'PastStory'")
 	public List<Story> getPastStories() {
 		logger.info("Enter AppServiceImpl.getPastStories");
 		List<Story> list = null;
