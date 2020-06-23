@@ -13,3 +13,14 @@ App Features:-
 4) Ability to run as microservice.
 5) Built on spring boot latest version 2.3.1.
 6) Integrated swagger-api.
+
+Endpoints:-
+
+1) GET /{storyId}/comments
+   - Get Top 10 comments list for given story.
+
+2) GET /past-stories
+   - Get Top past stories list.
+
+3) GET /top-stories
+   - Get Top 10 stories list.
