@@ -17,6 +17,7 @@ import com.app.assignment.model.Story;
 import com.app.assignment.proxy.service.HackerNewsProxyService;
 import com.app.assignment.service.StoryService;
 import com.app.assignment.service.UserService;
+import com.app.assignment.util.ListUtility;
 
 @Service
 public class StoryServiceImpl implements StoryService {
@@ -56,11 +57,9 @@ public class StoryServiceImpl implements StoryService {
 	@Override
 	public List<Story> sortTopStories(List<Story> list) {
 		logger.info("Enter: StoryServiceImpl.sortTopStories");
-		List<Story> sortedList = list.stream().sorted(Comparator.comparingInt(Story::getScore).reversed())
-				.collect(Collectors.toList());
-		List<Story> topList = sortedList.subList(0, 10);
+		List<Story> sortedList = ListUtility.sortStoryListByScoreDesc(list);
 		logger.info("Exit: StoryServiceImpl.sortTopStories");
-		return topList;
+		return sortedList;
 	}
 
 }

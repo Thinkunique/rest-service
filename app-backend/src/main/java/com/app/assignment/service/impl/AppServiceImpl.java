@@ -13,6 +13,7 @@ import com.app.assignment.model.Story;
 import com.app.assignment.service.AppService;
 import com.app.assignment.service.CommentService;
 import com.app.assignment.service.StoryService;
+import com.app.assignment.util.ListUtility;
 
 @Service
 public class AppServiceImpl implements AppService {
@@ -47,6 +48,7 @@ public class AppServiceImpl implements AppService {
 		try {
 			List<Story> list = storyService.getTopStories();
 			sortList = storyService.sortTopStories(list);
+			sortList = ListUtility.subListByRange(list, 0, 10);
 		} catch (InterruptedException e) {
 			logger.error("Error while retrieving top stories", e);
 		}
