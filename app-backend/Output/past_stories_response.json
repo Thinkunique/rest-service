@@ -1,0 +1,2982 @@
+{
+  "message": "Successfully retrieved past top stories",
+  "total": 372,
+  "stories": [
+    {
+      "id": "23623306",
+      "title": "Prescriptions Are a Dead End",
+      "url": "https://garybasin.com/prescriptions-are-a-dead-end/",
+      "score": 17,
+      "createdBy": "gbasin",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23623470",
+      "title": "Elevator.js – A “back to top” button that behaves like a real elevator",
+      "url": "http://tholman.com/elevator.js/",
+      "score": 129,
+      "createdBy": "gitgud",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597426",
+      "title": "Teaching physics to neural networks removes 'chaos blindness'",
+      "url": "https://phys.org/news/2020-06-physics-neural-networks-chaos.html",
+      "score": 108,
+      "createdBy": "JacobLinney",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23621022",
+      "title": "Exploration of Generative Art",
+      "url": "https://generativeartistry.com",
+      "score": 100,
+      "createdBy": "qrv3w",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612939",
+      "title": "Covid Usher in Totalitarianism Warns Journal of American Physicians and Surgeons",
+      "url": "https://www.globenewswire.com/news-release/2020/06/22/2051420/0/en/Panicdemic-Could-Usher-in-Totalitarianism-Warns-Journal-of-American-Physicians-and-Surgeons.html",
+      "score": 7,
+      "createdBy": "mrfusion",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23606052",
+      "title": "What’s New in macOS Big Sur: Human Interface Guidelines",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/macos/overview/whats-new-in-macos/",
+      "score": 402,
+      "createdBy": "tomduncalf",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23606951",
+      "title": "Eating Thai Fruit Demands Serious Effort but Delivers Sublime Reward",
+      "url": "https://www.nytimes.com/2020/06/22/world/asia/bangkok-thailand-fruit-durian.html",
+      "score": 77,
+      "createdBy": "Petiver",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23594707",
+      "title": "WireGuard Merged into OpenBSD",
+      "url": "https://marc.info/?l=openbsd-cvs&m=159274150512676&w=2",
+      "score": 408,
+      "createdBy": "axiomdata316",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23593890",
+      "title": "Good luck using generative adversarial networks in real life",
+      "url": "https://www.theregister.com/2020/06/19/generative_adversarial_networks_are_hard/",
+      "score": 5,
+      "createdBy": "pabo",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597975",
+      "title": "Everything you need to know about how a coronavirus vaccine might work",
+      "url": "https://www.abc.net.au/news/2020-06-18/coronavirus-covid-vaccine-race-how-the-candidates-work/12310814?nw=0",
+      "score": 6,
+      "createdBy": "puffl",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598277",
+      "title": "Vector tiles in QGIS 3.14",
+      "url": "https://www.maptiler.com/news/2020/06/vector-tiles-in-qgis-3-14/",
+      "score": 126,
+      "createdBy": "vami",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23608323",
+      "title": "China Speeds Up Advanced Chip Development",
+      "url": "https://semiengineering.com/china-speeds-up-advanced-chip-development/",
+      "score": 15,
+      "createdBy": "mrnode",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622011",
+      "title": "Roundup plaintiffs' attorneys plead guilty in $200M extortion scheme",
+      "url": "https://www.justice.gov/opa/pr/virginia-attorneys-plead-guilty-orchestrating-200-million-extortion-scheme-targeting",
+      "score": 90,
+      "createdBy": "IMTDb",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611874",
+      "title": "Nanoplastics accumulate in land-plant tissues: study",
+      "url": "https://www.sciencedaily.com/releases/2020/06/200622152542.htm",
+      "score": 215,
+      "createdBy": "instance",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23618465",
+      "title": "Lossless compression of English messages using GPT-2",
+      "url": "http://textsynth.org/sms.html",
+      "score": 116,
+      "createdBy": "kleiba",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23607317",
+      "title": "The systemic racism black Americans face, explained in charts",
+      "url": "https://www.vox.com/2020/6/17/21284527/systemic-racism-black-americans-9-charts-explained",
+      "score": 19,
+      "createdBy": "laurex",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23607364",
+      "title": "Ancient yet Cosmopolitan",
+      "url": "https://aeon.co/essays/the-modern-human-mind-evolved-further-and-farther-back",
+      "score": 22,
+      "createdBy": "prismatic",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23603831",
+      "title": "Apple’s roadmap for moving the first Macs away from Intel",
+      "url": "https://arstechnica.com/gadgets/2020/06/this-is-apples-roadmap-for-moving-the-first-macs-away-from-intel/",
+      "score": 17,
+      "createdBy": "CoolGuySteve",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599991",
+      "title": "Hygiene Is Overrated – You Can Be Too Clean",
+      "url": "https://www.theatlantic.com/magazine/archive/2020/07/hygiene-is-overrated/612235/",
+      "score": 10,
+      "createdBy": "pseudolus",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612085",
+      "title": "NASA is sending an experimental helicopter to Mars",
+      "url": "https://www.nytimes.com/2020/06/23/science/mars-helicopter-nasa.html",
+      "score": 4,
+      "createdBy": "mhb",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23613640",
+      "title": "Trump Suspends H-1B, Other Visas Temporarily",
+      "url": "https://insights.dice.com/2020/06/23/trump-suspends-h-1b-other-visas-temporarily/",
+      "score": 22,
+      "createdBy": "WrightStuff",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599204",
+      "title": "Sugary drink tax models show health gains, cost reductions, but vary by design",
+      "url": "https://newsroom.heart.org/news/sugary-drink-tax-models-show-health-gains-cost-reductions-but-vary-by-tax-design?preview=cd61",
+      "score": 111,
+      "createdBy": "hhs",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23602002",
+      "title": "Fraud Is In Plain Sight",
+      "url": "https://www.bloomberg.com/opinion/articles/2020-06-22/the-best-fraud-is-in-plain-sight",
+      "score": 17,
+      "createdBy": "greatwave1",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598015",
+      "title": "Fixing indoor air is a way to curb the spread of Covid-19",
+      "url": "https://www.fastcompany.com/90515931/theres-a-key-way-to-curb-the-spread-of-covid-19-but-no-one-is-talking-about-it",
+      "score": 38,
+      "createdBy": "akbarnama",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23593922",
+      "title": "The Defaults Don't Work",
+      "url": "https://moultano.wordpress.com/2020/06/21/the-defaults-dont-work/",
+      "score": 85,
+      "createdBy": "moultano",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604880",
+      "title": "Routine meetings are (mostly) a waste of time",
+      "url": "https://digg.com/@lukethomas14/routine-meetings-waste-of-time-3IDAsGwP",
+      "score": 14,
+      "createdBy": "lukethomas",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23618985",
+      "title": "Facebook whistleblower documents evidence of moderation algorithm and team bias",
+      "url": "https://www.youtube.com/watch?v=l7o4A16QCxE",
+      "score": 15,
+      "createdBy": "drak0n1c",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599591",
+      "title": "eBay’s former CEO denies any link to the cyberstalking of a blogger",
+      "url": "https://www.vox.com/recode/2020/6/18/21295992/ebay-security-stalking-ecommercebytes-cyberstalking-devin-wenig-james-baugh",
+      "score": 28,
+      "createdBy": "pabo",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23607309",
+      "title": "Trump will sign executive order temporarily suspending work visas for H-1B",
+      "url": "https://techcrunch.com/2020/06/22/president-trump-reportedly-will-sign-executive-order-temporarily-suspending-work-visas-for-h-1b-holders/",
+      "score": 11,
+      "createdBy": "chenjiayuan",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23601597",
+      "title": "The Importance of India",
+      "url": "https://alexkolchinski.com/2020/06/22/the-importance-of-india/",
+      "score": 124,
+      "createdBy": "kolchinski",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612794",
+      "title": "Ask HN: Are you a polymath? know of one?",
+      "url": null,
+      "score": 5,
+      "createdBy": "justaguyhere",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23602715",
+      "title": "Create No-JavaScript friendly sites",
+      "url": "https://www.garron.blog/posts/no-javascript-sites.html",
+      "score": 122,
+      "createdBy": "g-garron",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23594692",
+      "title": "Incestuous kings may have built Ireland’s Newgrange passage tomb",
+      "url": "https://arstechnica.com/science/2020/06/incestuous-kings-may-have-built-irelands-newgrange-passage-tomb/",
+      "score": 46,
+      "createdBy": "benbreen",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23601309",
+      "title": "Hands-On Linear Programming: Optimization with Python",
+      "url": "https://realpython.com/linear-programming-python/",
+      "score": 29,
+      "createdBy": "endlesstrax",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599757",
+      "title": "Show HN: The Bare Message Encoding",
+      "url": "https://drewdevault.com/2020/06/21/BARE-message-encoding.html",
+      "score": 34,
+      "createdBy": "ddevault",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23595158",
+      "title": "Understand Docker step by step. A tutorial repo for beginners",
+      "url": "https://github.com/championshuttler/docker-basicLearning",
+      "score": 44,
+      "createdBy": "championshuttle",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604417",
+      "title": "New macOS is macOS 11 – OS X is over",
+      "url": "https://twitter.com/donatj/status/1275141809551937542",
+      "score": 37,
+      "createdBy": "donatj",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612793",
+      "title": "Show HN: Sidequest – A personal ticket system that lives inside Slack",
+      "url": "https://www.getsidequest.app",
+      "score": 14,
+      "createdBy": "Sventek",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612007",
+      "title": "Millions of Americans Can't Afford Water",
+      "url": "https://www.consumerreports.org/personal-finance/millions-of-americans-cant-afford-water-as-bills-rise-80-percent-in-a-decade/?EXTKEY=AFLIP",
+      "score": 66,
+      "createdBy": "walterbell",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23617053",
+      "title": "Abolish the TechToPrisonPipeline",
+      "url": "https://medium.com/@CoalitionForCriticalTechnology/abolish-the-techtoprisonpipeline-9b5b14366b16",
+      "score": 6,
+      "createdBy": "longdefeat",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23614011",
+      "title": "Investing in the customer experience increases engagement and awareness",
+      "url": "https://medium.com/newtheory/what-is-customer-engagement-marketing-1f90223cc9ec",
+      "score": 4,
+      "createdBy": "Fermin",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23608534",
+      "title": "After outcry, Apple will let developers challenge App Store guidelines",
+      "url": "https://www.theverge.com/2020/6/22/21299814/apple-app-store-policies-ios-bug-fixes-approval-dispute-appeal",
+      "score": 13,
+      "createdBy": "aspenmayer",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604060",
+      "title": "Macs with new Apple-built chips will natively run iPhone and iPad apps",
+      "url": "https://www.theverge.com/2020/6/22/21299485/apple-mac-new-silicon-chips-iphone-ipad-apps-shared-architecture-wwdc-2020",
+      "score": 28,
+      "createdBy": "djrogers",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23619938",
+      "title": "Twitter slaps another warning label on Trump tweet about force",
+      "url": "https://www.washingtonpost.com/technology/2020/06/23/twitter-slaps-another-warning-label-trump-tweet-about-force/",
+      "score": 3,
+      "createdBy": "throwawaysea",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23617567",
+      "title": "E.U. May Bar American Travelers as It Reopens Borders, Citing Failures on Virus",
+      "url": "https://www.nytimes.com/2020/06/23/world/europe/coronavirus-EU-American-travel-ban.html",
+      "score": 9,
+      "createdBy": "jbegley",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23614222",
+      "title": "Amazon to Launch $2B Venture Capital Fund to Invest in Clean Energy",
+      "url": "https://www.wsj.com/articles/amazon-to-launch-2-billion-venture-capital-fund-to-invest-in-clean-energy-11592910001",
+      "score": 4,
+      "createdBy": "richardzyx",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604470",
+      "title": "Project Management as Code with Graphviz (2017)",
+      "url": "https://zwischenzugs.com/2017/12/18/project-management-as-code-with-graphviz/",
+      "score": 10,
+      "createdBy": "Kinrany",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23610851",
+      "title": "CashRegister in PyQt5 with barcode logon and 32 programmable buttons",
+      "url": "https://github.com/DirkJanJansen/Sales",
+      "score": 8,
+      "createdBy": "DirkJanJansen",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23617461",
+      "title": "Tiny C Compiler",
+      "url": "https://bellard.org/tcc/",
+      "score": 220,
+      "createdBy": "Koshkin",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598588",
+      "title": "The Problem with America’s Lab Mice [video]",
+      "url": "https://www.youtube.com/watch?v=ve4q-1D_Ajo",
+      "score": 90,
+      "createdBy": "zpeti",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23614754",
+      "title": "Safari is adopting an extensions API similar to Firefox’s WebExtensions",
+      "url": "https://hacks.mozilla.org/2020/06/welcoming-safari-to-the-webextensions-community/",
+      "score": 174,
+      "createdBy": "skellertor",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23609275",
+      "title": "SpaceX Starlink antennas spied at Starship factory for the first time ever",
+      "url": "https://www.teslarati.com/spacex-starlink-antennas-spied-starship-factory/",
+      "score": 23,
+      "createdBy": "chewdatgenie",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23620077",
+      "title": "A wild bug: 1970s Intel 8271 disc chip ate my data",
+      "url": "https://scarybeastsecurity.blogspot.com/2020/06/a-wild-bug-1970s-intel-8271-disc-chip.html",
+      "score": 70,
+      "createdBy": "scarybeast",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596296",
+      "title": "Breathing Easily: The ancient world's solutions for protective equipment",
+      "url": "https://www.historytoday.com/history-matters/breathing-easily",
+      "score": 8,
+      "createdBy": "Hooke",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23616422",
+      "title": "Complain HN: The new GitHub's layout is a monstrosity",
+      "url": null,
+      "score": 34,
+      "createdBy": "gioscarab",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611983",
+      "title": "LinuxFoundation newsletter is running on Microsoft Windows and IIS",
+      "url": "http://techrights.org/2020/06/22/proprietary-iis-and-windows-foundation/",
+      "score": 15,
+      "createdBy": "zoobab",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23616955",
+      "title": "ARM and Linux take the supercomputer TOP500 crown",
+      "url": "https://www.zdnet.com/article/arm-and-linux-take-supercomputer-top500-crown/",
+      "score": 5,
+      "createdBy": "CrankyBear",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599221",
+      "title": "Health Effects of Coffee",
+      "url": "https://www.mdpi.com/2072-6643/12/6/1842",
+      "score": 160,
+      "createdBy": "snikeris",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622241",
+      "title": "How effective communication can be achieved in a digital work environment",
+      "url": "https://www.airsend.io/blog/index.php/2020/05/24/1-tip-on-how-effective-communication-can-be-achieved-in-a-digital-work-environment/",
+      "score": 18,
+      "createdBy": "markshepard",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622728",
+      "title": "Bastions on demand in an AWS VPC",
+      "url": "https://theconsultingcto.com/posts/bastions-on-demand/",
+      "score": 21,
+      "createdBy": "mooreds",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23606602",
+      "title": "If Earth Was 50% Larger, We Might Be Stuck Here",
+      "url": "https://www.realclearscience.com/blog/2017/07/06/if_earth_was_50_larger_we_might_be_stuck_here.html",
+      "score": 11,
+      "createdBy": "sjcsjc",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23608552",
+      "title": "Show HN: VPN with automatic region routing, port-forwarding and custom filtering",
+      "url": "https://www.oeck.com",
+      "score": 20,
+      "createdBy": "Oeck",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612415",
+      "title": "Ask HN: How to avoid over-engineering software design for future use cases?",
+      "url": null,
+      "score": 49,
+      "createdBy": "h43k3r",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23623879",
+      "title": "Intro to Dynamic Programming",
+      "url": "https://www.youtube.com/playlist?list=PLVrpF4r7WIhTT1hJqZmjP10nxsmrbRvlf",
+      "score": 5,
+      "createdBy": "andreygrehov",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23616400",
+      "title": "If you’re surprised by how police are acting, you don’t understand US history",
+      "url": "https://www.theguardian.com/commentisfree/2020/jun/05/police-us-history-reform-violence-oppression",
+      "score": 6,
+      "createdBy": "chishaku",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23609811",
+      "title": "Temperatures in an Arctic Siberian town hit 100 degrees, a new high",
+      "url": "https://edition.cnn.com/2020/06/22/weather/siberia-arctic-100-degrees-climate-change-trnd/index.html",
+      "score": 10,
+      "createdBy": "throwaway888abc",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23614945",
+      "title": "Making Blurry Faces Photorealistic Goes Only So Far",
+      "url": "https://spectrum.ieee.org/tech-talk/computing/software/making-blurry-faces-photorealistic-goes-only-so-far",
+      "score": 68,
+      "createdBy": "MindGods",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23595504",
+      "title": "Immersive Light Field Video with a Layered Mesh Representation",
+      "url": "https://augmentedperception.github.io/deepviewvideo/",
+      "score": 93,
+      "createdBy": "PetitPrince",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23621080",
+      "title": "Haskell for a New Decade [pdf]",
+      "url": "http://dev.stephendiehl.com/new_decade.pdf",
+      "score": 75,
+      "createdBy": "todsacerdoti",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622181",
+      "title": "Facebook’s dominance is built on anti-competitive behavior",
+      "url": "https://insights.som.yale.edu/insights/facebook-s-dominance-is-built-on-anti-competitive-behavior",
+      "score": 70,
+      "createdBy": "hhs",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23619439",
+      "title": "Journalist’s phone hacked: all he had to do was visit any website",
+      "url": "https://www.thestar.com/news/canada/2020/06/21/journalists-phone-hacked-by-new-invisible-technique-all-he-had-to-do-was-visit-one-website-any-website.html",
+      "score": 201,
+      "createdBy": "vezycash",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622699",
+      "title": "The Sin of Sloth – an external module system for C",
+      "url": "https://billwadge.wordpress.com/2020/06/23/the-sin-of-sloth-an-external-module-system-for-c/",
+      "score": 21,
+      "createdBy": "akakievich",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23613719",
+      "title": "I Just Hit $100k/year On GitHub Sponsors",
+      "url": "https://calebporzio.com/i-just-hit-dollar-100000yr-on-github-sponsors-heres-how-i-did-it",
+      "score": 1349,
+      "createdBy": "calebporzio",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23620757",
+      "title": "What I learned from looking at every AI/ML tool I could find",
+      "url": "https://huyenchip.com/2020/06/22/mlops.html",
+      "score": 193,
+      "createdBy": "amrrs",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23601314",
+      "title": "Open IP over VHF/UHF",
+      "url": "http://www.rowetel.com/?p=7207",
+      "score": 60,
+      "createdBy": "zdw",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23601180",
+      "title": "On Contact Tracing and Hardware Tokens",
+      "url": "https://www.bunniestudios.com/blog/?p=5820",
+      "score": 63,
+      "createdBy": "rvense",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23606480",
+      "title": "Show HN: Modern, modular, extensible CSS button library – knopf.css",
+      "url": "https://knopf.dev/",
+      "score": 6,
+      "createdBy": "hiroagustin",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611849",
+      "title": "Ask HN: A FOSS Alternative for Notion or Roam Research",
+      "url": null,
+      "score": 8,
+      "createdBy": "mindfreeze",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23617188",
+      "title": "You can't tell people anything (2004)",
+      "url": "http://habitatchronicles.com/2004/04/you-cant-tell-people-anything/",
+      "score": 277,
+      "createdBy": "memexy",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622071",
+      "title": "The Problem with Git Flow",
+      "url": "https://about.gitlab.com/blog/2020/03/05/what-is-gitlab-flow/",
+      "score": 26,
+      "createdBy": "silasdb",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23621279",
+      "title": "Segway ends production of its original scooter",
+      "url": "https://www.fastcompany.com/90517971/exclusive-segway-the-most-hyped-invention-since-the-macintosh-to-end-production?partner=feedburner&utm_source=feedly&utm_medium=feed&utm_campaign=feedburner+fastcompany&utm_content=feedburner",
+      "score": 231,
+      "createdBy": "bookofjoe",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612874",
+      "title": "Tolkien’s Mythic Plan for England",
+      "url": "https://unherd.com/2020/06/is-this-tolkiens-vision-of-england/",
+      "score": 21,
+      "createdBy": "pseudolus",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23613995",
+      "title": "About the Rosetta Translation Environment",
+      "url": "https://developer.apple.com/documentation/apple_silicon/about_the_rosetta_translation_environment",
+      "score": 203,
+      "createdBy": "loun",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23603414",
+      "title": "iOS 14 will let you change your default email and web browser apps",
+      "url": "https://9to5mac.com/2020/06/22/ios-14-default-apps/",
+      "score": 290,
+      "createdBy": "jedimind",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23608012",
+      "title": "A high-coverage Neandertal genome from Chagyrskaya Cave",
+      "url": "https://www.pnas.org/content/early/2020/06/15/2004944117",
+      "score": 30,
+      "createdBy": "diodorus",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23600166",
+      "title": "Performance improvements in Sourcegraph's precise code intelligence backend",
+      "url": "https://about.sourcegraph.com/blog/performance-improvements-in-precise-code-intel",
+      "score": 10,
+      "createdBy": "efritz",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23594586",
+      "title": "The Emperor of Stones",
+      "url": "https://www.archaeology.org/issues/388-2007/digs/8773-digs-sweden-runestone",
+      "score": 12,
+      "createdBy": "tintinnabula",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23602682",
+      "title": "Deep Learning from Scratch Part 3: Generalizing Gradient Descent",
+      "url": "https://jdridgeway.com/deep-learning-from-scratch-generalizing-gradient-descent/",
+      "score": 93,
+      "createdBy": "jeff_ridgeway4",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598783",
+      "title": "Ask HN: How to learn to create/draw mental models for programming?",
+      "url": null,
+      "score": 84,
+      "createdBy": "neogenix",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23616126",
+      "title": "Python Enhancement Proposal: Structural Pattern Matching",
+      "url": "https://www.python.org/dev/peps/pep-0622/",
+      "score": 7,
+      "createdBy": "p4bl0",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598121",
+      "title": "Ask HN: Why is there no good micro payments service online?",
+      "url": null,
+      "score": 10,
+      "createdBy": "lepetitpedre",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599261",
+      "title": "How Doordash got their first 1000 customers",
+      "url": "https://first1000.substack.com/p/-doordash",
+      "score": 29,
+      "createdBy": "abouelatta",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596603",
+      "title": "My dad launched the quest to find alien intelligence",
+      "url": "https://www.nationalgeographic.com/science/2020/06/father-launched-quest-find-alien-intelligence-changed-astronomy/",
+      "score": 124,
+      "createdBy": "8bitsrule",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23621466",
+      "title": "The death of the private citizen?",
+      "url": "https://spectator.us/new-york-times-private-slate-star-codex-blog/",
+      "score": 100,
+      "createdBy": "apsec112",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23616255",
+      "title": "Goldman Sans",
+      "url": "https://design.gs.com/d/story/goldman-sans/",
+      "score": 194,
+      "createdBy": "rococode",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611081",
+      "title": "Learning operating system development using Linux kernel and Raspberry Pi",
+      "url": "https://s-matyukevich.github.io/raspberry-pi-os/",
+      "score": 417,
+      "createdBy": "weeber",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598631",
+      "title": "Show HN: A fully automated AdGuard blocklist repo",
+      "url": "https://github.com/smashah/smashblock",
+      "score": 19,
+      "createdBy": "smashah",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599056",
+      "title": "What’s Facebook’s Deal with Donald Trump?",
+      "url": "https://www.nytimes.com/2020/06/21/business/media/facebook-donald-trump-mark-zuckerberg.html",
+      "score": 8,
+      "createdBy": "DyslexicAtheist",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597706",
+      "title": "Vast neolithic circle of deep shafts found near Stonehenge",
+      "url": "https://www.theguardian.com/science/2020/jun/22/vast-neolithic-circle-of-deep-shafts-found-near-stonehenge",
+      "score": 18,
+      "createdBy": "jhoechtl",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23616780",
+      "title": "Slate Star Codex has been deleted",
+      "url": "https://slatestarcodex.com/",
+      "score": 13,
+      "createdBy": "tossAfterUsing",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23619827",
+      "title": "Covid-19 Cases in China Were Likely 37 Times Higher Than Reported",
+      "url": "https://www.rand.org/pubs/research_reports/RRA248-3.html",
+      "score": 7,
+      "createdBy": "prostoalex",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23615790",
+      "title": "Jepsen: Redis-Raft 1b3fbf6",
+      "url": "https://jepsen.io/analyses/redis-raft-1b3fbf6",
+      "score": 173,
+      "createdBy": "aphyr",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23621284",
+      "title": "Construction begins on world’s biggest liquid air battery",
+      "url": "https://www.theguardian.com/environment/2020/jun/18/worlds-biggest-liquid-air-battery-starts-construction-in-uk",
+      "score": 36,
+      "createdBy": "zeristor",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597937",
+      "title": "An Agoraphobic Traveler Wanders the Earth",
+      "url": "https://www.atlasobscura.com/articles/agoraphobic-travel",
+      "score": 41,
+      "createdBy": "exanimo_sai",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23618456",
+      "title": "Show HN: Tunnelto.dev – expose localhost with a public URL (built in Rust)",
+      "url": "https://tunnelto.dev",
+      "score": 87,
+      "createdBy": "agrinman",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23607899",
+      "title": "Apple will let you emulate old apps and run iOS apps on ARM Macs",
+      "url": "https://techcrunch.com/2020/06/22/apple-will-let-you-emulate-old-apps-and-run-ios-apps-on-arm-macs/",
+      "score": 5,
+      "createdBy": "coronadisaster",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611659",
+      "title": "How CFEngine stays ahead of the pack",
+      "url": "https://cfengine.com/company/blog-detail/how-cfengine-stays-ahead-of-the-pack/",
+      "score": 22,
+      "createdBy": "roschern",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23595022",
+      "title": "Maersk, Me and NotPetya",
+      "url": "https://gvnshtn.com/maersk-me-notpetya/",
+      "score": 193,
+      "createdBy": "omnibrain",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611863",
+      "title": "We’ve decided to rename Riot",
+      "url": "https://blog.riot.im/the-world-is-changing/",
+      "score": 318,
+      "createdBy": "anotherevan",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604690",
+      "title": "Mac Apps Are Dead",
+      "url": "https://medium.com/@vojto/mac-apps-are-dead-5f192524f88b",
+      "score": 6,
+      "createdBy": "Void_",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23609434",
+      "title": "Cheap tricks for high-performance Rust",
+      "url": "https://deterministic.space/high-performance-rust.html",
+      "score": 65,
+      "createdBy": "O_H_E",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596322",
+      "title": "Body Cameras Haven't Stopped Police Brutality. Here's Why",
+      "url": "https://www.wired.com/story/body-cameras-stopped-police-brutality-george-floyd/",
+      "score": 8,
+      "createdBy": "pmoriarty",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23595430",
+      "title": "Show HN: Browservice – Browse the modern web on historical browsers",
+      "url": "https://github.com/ttalvitie/browservice",
+      "score": 191,
+      "createdBy": "ttalvitie",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596617",
+      "title": "Preliminary Theory of the In-Group Contrarian",
+      "url": "https://outsidertheory.com/preliminary-theory-of-the-in-group-contrarian/",
+      "score": 53,
+      "createdBy": "fullshark",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596070",
+      "title": "Reverse Engineering the Comtech AHA363 PCIe Gzip Accelerator Board",
+      "url": "https://tomverbeure.github.io/2020/06/14/AHA363-Reverse-Engineering.html",
+      "score": 127,
+      "createdBy": "todsacerdoti",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597931",
+      "title": "Ask HN: Best Video Call Solution for Elderly",
+      "url": null,
+      "score": 55,
+      "createdBy": "noodlesUK",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612772",
+      "title": "macOS 11: copies of dynamic libraries are no longer present on the file system",
+      "url": "https://twitter.com/mycoliza/status/1275305517066227712",
+      "score": 177,
+      "createdBy": "jedisct1",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23595679",
+      "title": "Does computing make the world better?",
+      "url": "https://www.brandonsmith.ninja/blog/is-software-good",
+      "score": 46,
+      "createdBy": "brundolf",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23613428",
+      "title": "Article extraction benchmark: open-source libraries and commercial services",
+      "url": "https://github.com/scrapinghub/article-extraction-benchmark/blob/master/README.rst",
+      "score": 19,
+      "createdBy": "lopuhin",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612910",
+      "title": "Show HN: Awk-JVM – A toy JVM in Awk",
+      "url": "https://github.com/rethab/awk-jvm",
+      "score": 165,
+      "createdBy": "rethab",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23614601",
+      "title": "Chrome killed my extension and won’t tell me why",
+      "url": "https://blog.lipsurf.com/part-ii-after-3-years-of-work-chrome-killed-my-extension-and-wont-tell-me-why/",
+      "score": 203,
+      "createdBy": "mikob",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23603852",
+      "title": "macOS Big Sur Preview",
+      "url": "https://www.apple.com/macos/big-sur-preview/",
+      "score": 274,
+      "createdBy": "theBashShell",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23605557",
+      "title": "Trump suspends H1B, H4 visas till year end",
+      "url": "https://timesofindia.indiatimes.com/world/us/trump-suspends-h1b-h4-visas/articleshow/76519657.cms",
+      "score": 229,
+      "createdBy": "7d7n",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23606869",
+      "title": "Trump will sign an order suspending work visas (including H-1B)",
+      "url": "https://www.nytimes.com/2020/06/22/world/coronavirus-updates.html#link-2dd2e3cb",
+      "score": 15,
+      "createdBy": "zetazzed",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23617229",
+      "title": "Ask HN: Thoughts on new GitHub layout?",
+      "url": null,
+      "score": 263,
+      "createdBy": "verdverm",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23608770",
+      "title": "Draftbit (YC W18) Is Hiring Senior Engineers – Reason, GraphQL, React Native",
+      "url": "https://draftbit.com/jobs/senior-software-engineer",
+      "score": 1,
+      "createdBy": "Brushfire",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23595956",
+      "title": "Reverse Engineering Snapchat (Part II): Debofuscating the Undeobfuscatable",
+      "url": "https://hot3eed.github.io/2020/06/22/snap_p2_deobfuscation.html",
+      "score": 290,
+      "createdBy": "3eed",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23620252",
+      "title": "EU Plans Ban on US Travel to Europe",
+      "url": "https://www.theverge.com/2020/6/23/21300747/european-union-eu-ban-us-travel-coronavirus-reopening-borders-draft-list",
+      "score": 45,
+      "createdBy": "jmspring",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23610705",
+      "title": "NYT Threatens to Dox SlateStarCodex",
+      "url": "https://twitter.com/Austen/status/1275318251942117376",
+      "score": 29,
+      "createdBy": "buboard",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23602637",
+      "title": "Show HN: Dropbase – Turn your CSV files into live databases in seconds",
+      "url": "https://dropbase.castodia.com",
+      "score": 22,
+      "createdBy": "jimmyechan",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23602626",
+      "title": "TSMC officially begins 5 nm production",
+      "url": "https://www.notebookcheck.net/TSMC-officially-begins-5-nm-production-Snapdragon-875-SoC-Snapdragon-X60-5G-modem-A14-Bionic-and-a-5-nm-AMD-high-end-GPU-incoming.477119.0.html",
+      "score": 251,
+      "createdBy": "ChuckNorris89",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598094",
+      "title": "Show HN: Quickly search, build and share AI models",
+      "url": "https://www.picsellia.com",
+      "score": 17,
+      "createdBy": "gingahbread31",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23601003",
+      "title": "Patagonia joins growing list of companies boycotting Facebook ads",
+      "url": "https://www.cnbc.com/2020/06/22/patagonia-joins-growing-list-of-companies-boycotting-facebook-ads.html",
+      "score": 466,
+      "createdBy": "onewhonknocks",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23600645",
+      "title": "Show HN: Generate Visual Sitemap from sitemap.xml, just write URL",
+      "url": "https://octopus.do/sitemap/resource/generator",
+      "score": 63,
+      "createdBy": "losteden1",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622446",
+      "title": "WSJ: Chinese with government ties funneled 100s of thousands to Trump campaign",
+      "url": "https://www.rawstory.com/2020/06/chinese-nationals-with-government-ties-have-funneled-hundreds-of-thousands-in-cash-to-trumps-re-election-campaign-wsj/",
+      "score": 4,
+      "createdBy": "rbecker",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23614305",
+      "title": "Is WebP really better than JPEG?",
+      "url": "https://siipo.la/blog/is-webp-really-better-than-jpeg",
+      "score": 365,
+      "createdBy": "kasabali",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23617822",
+      "title": "Oculus sunsets Go, will add easier Quest app distribution",
+      "url": "https://www.oculus.com/blog/an-update-on-the-evolution-of-the-oculus-platform-/",
+      "score": 90,
+      "createdBy": "shafyy",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23616878",
+      "title": "Show HN: Query 1.6B rows in milliseconds, live",
+      "url": "http://try.questdb.io:9000/index.html",
+      "score": 195,
+      "createdBy": "bluestreak",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23614042",
+      "title": "Dungeon Scrawl: Old school maps in minutes",
+      "url": "https://dungeonscrawl.com/",
+      "score": 316,
+      "createdBy": "Caseee",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599411",
+      "title": "Deus Ex at 20: The oral history of a pivotal PC game",
+      "url": "https://www.rockpapershotgun.com/2020/06/22/deus-ex-at-20-the-oral-history-of-a-pivotal-pc-game/",
+      "score": 125,
+      "createdBy": "doppp",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23608687",
+      "title": "New Blog post on Portainer 2.0 and upcoming features",
+      "url": "https://www.portainer.io/2020/06/portainer-2-0-and-the-development-balancing-act/",
+      "score": 6,
+      "createdBy": "neilcresswell",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23617298",
+      "title": "David Heinemeier Hansson: 'Apple Has Approved Hey Without In-App Purchasing '",
+      "url": "https://twitter.com/dhh/status/1275066259801923584",
+      "score": 6,
+      "createdBy": "MilnerRoute",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596516",
+      "title": "One-fifth of Earth's ocean floor is now mapped",
+      "url": "https://www.bbc.com/news/science-environment-53119686",
+      "score": 83,
+      "createdBy": "pseudolus",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598824",
+      "title": "Wirecard – The “German Enron”, and a personal history",
+      "url": "https://valueandopportunity.com/2020/06/19/wirecard-the-german-enron-a-very-personal-history-2008-2020/",
+      "score": 181,
+      "createdBy": "joydeepdg",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598391",
+      "title": "An LSD Trip “Off-Switch” May Be Coming Soon",
+      "url": "https://www.freethink.com/articles/lsd-trip",
+      "score": 145,
+      "createdBy": "jaoo",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23623119",
+      "title": "Hospitals Sued to Keep Prices Secret. They Lost",
+      "url": "https://www.nytimes.com/2020/06/23/upshot/hospitals-lost-price-transparency-lawsuit.html",
+      "score": 15,
+      "createdBy": "walterbell",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612749",
+      "title": "Simulating Hydraulic Erosion",
+      "url": "https://jobtalle.com/simulating_hydraulic_erosion.html",
+      "score": 50,
+      "createdBy": "schnautzi",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23603679",
+      "title": "Cameo's CEO on how he plans to disrupt Hollywood",
+      "url": "https://dot.la/cameo-ceo-on-his-move-to-l-a-and-his-companys-future-2646225672.html",
+      "score": 87,
+      "createdBy": "ericzass",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23595793",
+      "title": "Hacked – Ten years of data from over 200 police departments",
+      "url": "https://twitter.com/elijahdaniel/status/1274456796896219136",
+      "score": 17,
+      "createdBy": "SQL2219",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596976",
+      "title": "What’s Facebook’s Deal with Donald Trump?",
+      "url": "https://www.nytimes.com/2020/06/21/business/media/facebook-donald-trump-mark-zuckerberg.html",
+      "score": 11,
+      "createdBy": "dwarkesh",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604803",
+      "title": "What are your WWDC thoughts?",
+      "url": null,
+      "score": 11,
+      "createdBy": "dtroit101",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23610708",
+      "title": "Moral Cruelty and the Left",
+      "url": "https://www.tabletmag.com/sections/arts-letters/articles/judith-shklar-politics-of-fear",
+      "score": 5,
+      "createdBy": "trelonid",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23617652",
+      "title": "California sets Covid-19 daily record, Bay Area cumulative total passes 20k",
+      "url": "https://www.eastbaytimes.com/2020/06/23/coronavirus-california-sets-another-daily-record-as-bay-area-surges-past-20000-cases/",
+      "score": 142,
+      "createdBy": "MilnerRoute",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599427",
+      "title": "Kafka: The Rescue Will Begin in Its Own Time",
+      "url": "https://www.newyorker.com/magazine/2020/06/29/the-rescue-will-begin-in-its-own-time",
+      "score": 201,
+      "createdBy": "mitchbob",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23601483",
+      "title": "The World in 2036: Nassim Taleb looks at what will break, and what won't (2010)",
+      "url": "https://www.economist.com/news/2010/11/22/nassim-taleb-looks-at-what-will-break-and-what-wont",
+      "score": 95,
+      "createdBy": "pedrodelfino",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23614128",
+      "title": "My family saw a police car hit a kid, then I learned how NYPD impunity works",
+      "url": "https://www.propublica.org/article/my-family-saw-a-police-car-hit-a-kid-on-halloween-then-i-learned-how-nypd-impunity-works",
+      "score": 737,
+      "createdBy": "danso",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599038",
+      "title": "Rust concurrency: the archetype of a message-passing bug",
+      "url": "https://medium.com/@polyglot_factotum/rust-concurrency-the-archetype-of-a-message-passing-bug-817b60efd8f8",
+      "score": 184,
+      "createdBy": "polyglotfacto",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23623125",
+      "title": "HashiCorp Cloud Platform",
+      "url": "https://www.hashicorp.com/blog/announcing-cloud-platform/",
+      "score": 9,
+      "createdBy": "chirau",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598939",
+      "title": "Crows’ ability to discriminate between languages",
+      "url": "https://corvidresearch.blog/2020/06/21/the-crows-are-watching-your-language-literally/",
+      "score": 116,
+      "createdBy": "polm23",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23609444",
+      "title": "The Value of Life",
+      "url": "http://www.overcomingbias.com/2020/06/the-value-of-life.html",
+      "score": 96,
+      "createdBy": "cinquemb",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23610416",
+      "title": "I Am Deleting the Blog",
+      "url": "https://slatestarcodex.com/2020/06/22/nyt-is-threatening-my-safety-by-revealing-my-real-name-so-i-am-deleting-the-blog/",
+      "score": 2271,
+      "createdBy": "perditus",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23621520",
+      "title": "Canada considering internet link tax",
+      "url": "https://www.theglobeandmail.com/business/commentary/article-heritage-minister-raises-possibility-of-link-tax-for-internet/",
+      "score": 15,
+      "createdBy": "drchiu",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23595020",
+      "title": "First Arm Macs: 13-Inch MacBook Pro, Redesigned iMac; Late 2020 or Early 2021",
+      "url": "https://www.macrumors.com/2020/06/21/apple-arm-13-inch-macbook-pro-imac/?scrolla=5eb6d68b7fedc32c19ef33b4",
+      "score": 30,
+      "createdBy": "aspenmayer",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599081",
+      "title": "‘BlueLeaks’ Exposes Files from Hundreds of Police Departments",
+      "url": "https://krebsonsecurity.com/2020/06/blueleaks-exposes-files-from-hundreds-of-police-departments/",
+      "score": 499,
+      "createdBy": "itcrowd",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23621173",
+      "title": "XDG Base Directory Specification",
+      "url": "https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html",
+      "score": 4,
+      "createdBy": "snicker7",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597285",
+      "title": "How Does Git Know What a Python Function/Class Definition Looks Like?",
+      "url": "https://mobile.twitter.com/simonw/status/1270359803957612545",
+      "score": 34,
+      "createdBy": "gilad",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23605614",
+      "title": "Social Audio",
+      "url": "https://subvert.substack.com/p/social-audio-connection-over-community",
+      "score": 10,
+      "createdBy": "jgecawich",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23609324",
+      "title": "Why does mathematical convention deal so ineptly with multisets?",
+      "url": "https://math.stackexchange.com/q/152223/18947",
+      "score": 3,
+      "createdBy": "luu",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23615218",
+      "title": "Linux Touchpad Like a MacBook update: progress on multitouch",
+      "url": "https://bill.harding.blog/2020/06/22/linux-touchpad-project-update-progress-on-multitouch/",
+      "score": 255,
+      "createdBy": "wbharding",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611911",
+      "title": "Tasks.org – Open-source ToDo app for Android with CalDAV sync",
+      "url": "https://tasks.org/",
+      "score": 194,
+      "createdBy": "freetonik",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23621709",
+      "title": "iOS 14 catches apps spying on your clipboard – Ryan Jones on Twitter",
+      "url": "https://twitter.com/rjonesy/status/1275484107372257280",
+      "score": 5,
+      "createdBy": "_venkatasg",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622119",
+      "title": "Trump Administration Price-Transparency Rule Covering Hospitals Upheld",
+      "url": "https://www.wsj.com/articles/trump-administration-price-transparency-rule-covering-hospitals-upheld-11592945973",
+      "score": 11,
+      "createdBy": "JumpCrisscross",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23603874",
+      "title": "Microsoft is shutting down Mixer and partnering with Facebook Gaming",
+      "url": "https://www.theverge.com/2020/6/22/21299032/microsoft-mixer-closing-facebook-gaming-partnership-xcloud-features",
+      "score": 304,
+      "createdBy": "minimaxir",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597199",
+      "title": "The largest cave owner in the U.S.",
+      "url": "https://www.outsideonline.com/2414888/john-ackerman-caves-minnesota",
+      "score": 179,
+      "createdBy": "aaron695",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597142",
+      "title": "The Waypoint NDA",
+      "url": "https://waypointnda.com/",
+      "score": 91,
+      "createdBy": "bobbiechen",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597596",
+      "title": "Google’s true origin partly lies in gov grants for mass surveillance (2017)",
+      "url": "https://qz.com/1145669/googles-true-origin-partly-lies-in-cia-and-nsa-research-grants-for-mass-surveillance/",
+      "score": 135,
+      "createdBy": "akshaybhalotia",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599560",
+      "title": "Solar geoengineering could cause unwanted changes in climate, modelling suggests",
+      "url": "https://physicsworld.com/a/solar-geoengineering-could-cause-unwanted-changes-in-climate-new-modelling-suggests/",
+      "score": 4,
+      "createdBy": "makerofspoons",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23608976",
+      "title": "Containers the hard way: Gocker: A mini Docker written in Go",
+      "url": "https://github.com/shuveb/containers-the-hard-way",
+      "score": 18,
+      "createdBy": "tzury",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23593872",
+      "title": "Video Games Are the Future of Education",
+      "url": "https://nabeelqu.co/education",
+      "score": 468,
+      "createdBy": "nqureshi",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599847",
+      "title": "What Is Zig's “Colorblind” Async/Await?",
+      "url": "https://kristoff.it/blog/zig-colorblind-async-await/",
+      "score": 72,
+      "createdBy": "kristoff_it",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23601195",
+      "title": "Nginx Proxy Manager – UI to manage letsencrypt-secured reverse proxies",
+      "url": "https://nginxproxymanager.com",
+      "score": 18,
+      "createdBy": "spdustin",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23621805",
+      "title": "Feedback Canvas: A tool for receiving honest feedback from your team",
+      "url": "https://stanete.com/feedback-canvas",
+      "score": 11,
+      "createdBy": "stanete",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598162",
+      "title": "Vulkan Driver for the Raspberry Pi (Broadcom Videocore IV)",
+      "url": "https://github.com/Yours3lf/rpi-vk-driver",
+      "score": 41,
+      "createdBy": "doener",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597573",
+      "title": "Sat solver on top of regex matcher",
+      "url": "https://yurichev.com/news/20200621_regex_SAT/",
+      "score": 89,
+      "createdBy": "justinucd",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23615135",
+      "title": "Andrew Ng: The suspension of H1B is bad for the US and bad for innovation",
+      "url": "https://twitter.com/AndrewYNg/status/1275250038898212865",
+      "score": 230,
+      "createdBy": "melenaboija",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23615404",
+      "title": "What ‘less lethal’ weapons do",
+      "url": "https://www.scientificamerican.com/article/what-less-lethal-weapons-actually-do/",
+      "score": 91,
+      "createdBy": "LinuxBender",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23608090",
+      "title": "Clara Immerwahr: Science’s Tragic and Surprisingly Modern Heroine",
+      "url": "https://nursingclio.org/2020/06/16/clara-immerwahr-sciences-tragic-and-surprisingly-modern-heroine/",
+      "score": 22,
+      "createdBy": "lermontov",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23613552",
+      "title": "Dell to Begin Shipping Ubuntu 20.04 LTS on Their Latest XPS Developer Edition",
+      "url": "https://www.phoronix.com/scan.php?page=news_item&px=Dell-XPS-Ubuntu-20.04-Shipping",
+      "score": 28,
+      "createdBy": "caution",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23601333",
+      "title": "Andrew Yang's Data Dividend Project is pushing Big Tech to pay users for data",
+      "url": "https://www.theverge.com/2020/6/22/21298919/andrew-yang-big-tech-data-dividend-project-facebook-google-ubi",
+      "score": 365,
+      "createdBy": "ohjeez",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23614320",
+      "title": "Ask HN: What project/team-based developer metrics do you track?",
+      "url": null,
+      "score": 6,
+      "createdBy": "k5jhn",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596037",
+      "title": "Companies Pitch Shortwave Radio to Shave Milliseconds Off Trades",
+      "url": "https://www.bloomberg.com/news/articles/2020-06-17/companies-pitch-shortwave-radio-to-shave-milliseconds-off-trades",
+      "score": 46,
+      "createdBy": "lightlyused",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23608091",
+      "title": "Show HN: Tendies – My free, simple, stock screener",
+      "url": "https://tendies.co.uk",
+      "score": 7,
+      "createdBy": "besart_hoxhaj",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598192",
+      "title": "Show HN: Syncit - An open source privacy-first co-browsing Tool",
+      "url": "https://syncit.luckid.io/",
+      "score": 13,
+      "createdBy": "yz-yu",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23607684",
+      "title": "Unreal Engine 4 .NET Core integration",
+      "url": "https://github.com/nxrighthere/UnrealCLR",
+      "score": 92,
+      "createdBy": "Stevvo",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23615303",
+      "title": "Go vs. Crystal Performance",
+      "url": "https://ptimofeev.com/go-vs-crystal-perfomance/",
+      "score": 185,
+      "createdBy": "open-source-ux",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611582",
+      "title": "Fujitsu’s Fugaku and A64FX Take Arm to the Top with 415 PetaFLOPs",
+      "url": "https://www.anandtech.com/show/15869/new-1-supercomputer-fujitsus-fugaku-and-a64fx-take-arm-to-the-top-with-415-petaflops",
+      "score": 65,
+      "createdBy": "dmmalam",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23608309",
+      "title": "Facebook Acquires Lone Echo VR Game Maker Ready at Dawn",
+      "url": "https://venturebeat.com/2020/06/22/facebook-acquires-lone-echo-vr-game-maker-ready-at-dawn/",
+      "score": 4,
+      "createdBy": "Jonanin",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599449",
+      "title": "The University Is Like a CD in the Streaming Age",
+      "url": "https://www.theatlantic.com/ideas/archive/2020/06/university-like-cd-streaming-age/613291/",
+      "score": 360,
+      "createdBy": "pbui",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612122",
+      "title": "Square Is Withholding Money Merchants Say They Need",
+      "url": "https://www.nytimes.com/2020/06/23/technology/square-jack-dorsey-pandemic-withholding.html",
+      "score": 28,
+      "createdBy": "shill",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622995",
+      "title": "Nevertheless, She Existed",
+      "url": "https://dev.to/cher/nevertheless-she-existed-5a2",
+      "score": 4,
+      "createdBy": "9nGQluzmnq3M",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23605790",
+      "title": "Ask HN: How to develop a growth mindset?",
+      "url": null,
+      "score": 127,
+      "createdBy": "sixaddyffe2481",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596654",
+      "title": "Toronto would like to be seen as the nice person’s Silicon Valley",
+      "url": "https://www.technologyreview.com/2020/06/17/1003314/toronto-would-like-to-be-seen-as-the-nice-persons-silicon-valley-if-thats-not-too-much-trouble/",
+      "score": 13,
+      "createdBy": "kjhughes",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23600514",
+      "title": "Apple approves Hey email app, but the fight’s not over",
+      "url": "https://www.theverge.com/2020/6/22/21298552/apple-hey-email-app-approval-rules-basecamp-launch",
+      "score": 29,
+      "createdBy": "tech-historian",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23613985",
+      "title": "Support for hand-drawn draw.io diagrams with rough.js",
+      "url": "https://www.diagrams.net/blog/rough-style",
+      "score": 13,
+      "createdBy": "davidjgraph",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23605658",
+      "title": "Trump to Sign Executive Order Suspending Many Foreign Work Visas",
+      "url": "https://www.nytimes.com/2020/06/22/world/coronavirus-updates.html",
+      "score": 18,
+      "createdBy": "jbegley",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23619876",
+      "title": "Design updates to repositories and GitHub UI",
+      "url": "https://github.blog/changelog/2020-06-23-design-updates-to-repositories-and-github-ui/",
+      "score": 25,
+      "createdBy": "vdepizzol",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23601011",
+      "title": "WWDC Special Event Keynote Live",
+      "url": "https://www.youtube.com/watch?v=GEZhD3J89ZE",
+      "score": 11,
+      "createdBy": "vignesh_warar",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599007",
+      "title": "Show HN: Switchboard – A mDNS based reverse proxy for personal infrastructure",
+      "url": "https://github.com/whytheplatypus/switchboard",
+      "score": 92,
+      "createdBy": "whytheplatypus",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599426",
+      "title": "Fixing Apple's Engineering in an Hour [video]",
+      "url": "https://www.youtube.com/watch?v=MlOPPuNv4Ec",
+      "score": 41,
+      "createdBy": "devxpy",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23614230",
+      "title": "Twitter says some business users had their private data exposed",
+      "url": "https://techcrunch.com/2020/06/23/twitter-says-some-business-users-had-their-pivate-data-exposed/",
+      "score": 12,
+      "createdBy": "theBashShell",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23605048",
+      "title": "A/B Street: A simulation game to fix Seattle's traffic",
+      "url": "https://abstreet.org/",
+      "score": 358,
+      "createdBy": "zackham",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23621841",
+      "title": "School Children Don’t Spread Coronavirus, French Study Shows",
+      "url": "https://www.bloomberg.com/news/articles/2020-06-23/school-children-don-t-spread-coronavirus-french-study-shows",
+      "score": 4,
+      "createdBy": "mrfusion",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622167",
+      "title": "The Mac is not an Open Platform anymore",
+      "url": "https://www.linkedin.com/pulse/mac-longer-open-platform-kartick-vaddadi",
+      "score": 31,
+      "createdBy": "kartickv",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23605656",
+      "title": "A-Cloud PR/FAQ",
+      "url": "https://www.tbray.org/ongoing/When/202x/2020/06/21/A-Cloud-PR-FAQ",
+      "score": 43,
+      "createdBy": "MindGods",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23608931",
+      "title": "Scientists find ring of ancient shafts near Stonehenge",
+      "url": "https://phys.org/news/2020-06-scientists-huge-ancient-shafts-stonehenge.html",
+      "score": 3,
+      "createdBy": "Xplor",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23605821",
+      "title": "Converting GW-BASIC to the Z80",
+      "url": "https://tia.mat.br/posts/2020/06/21/converting-gwbasic-to-z80.html",
+      "score": 31,
+      "createdBy": "acidx",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611505",
+      "title": "Show HN: Slingcode live-reloading web IDE to make, run, and share web apps P2P",
+      "url": "https://slingcode.net/",
+      "score": 18,
+      "createdBy": "chr15m",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599096",
+      "title": "Narrative Collapse",
+      "url": "https://theconvivialsociety.substack.com/p/narrative-collapse",
+      "score": 38,
+      "createdBy": "cetera",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598087",
+      "title": "Show HN: InboxFee – make strangers pay for their cold emails",
+      "url": "https://inboxfee.com",
+      "score": 27,
+      "createdBy": "brugeman",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622169",
+      "title": "Bill Proposed to Outlaw End to End Encryption",
+      "url": "https://www.judiciary.senate.gov/press/rep/releases/graham-cotton-blackburn-introduce-balanced-solution-to-bolster-national-security-end-use-of-warrant-proof-encryption-that-shields-criminal-activity",
+      "score": 72,
+      "createdBy": "WA9ACE",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23603837",
+      "title": "Gitlab 13.1",
+      "url": "https://about.gitlab.com/releases/2020/06/22/gitlab-13-1-released/",
+      "score": 186,
+      "createdBy": "bjoko",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23601595",
+      "title": "Reddit started banning accounts that voted for content “against their policies”",
+      "url": "https://old.reddit.com/r/WatchRedditDie/comments/hddnml/the_warnings_have_changed_into_bannings/",
+      "score": 407,
+      "createdBy": "s9w",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23617145",
+      "title": "Snapchat adds free phone number verification to its list of SDK perks",
+      "url": "https://techcrunch.com/2020/06/23/snapchat-adds-free-phone-number-verification-to-its-list-of-sdk-perks/",
+      "score": 23,
+      "createdBy": "imartin2k",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23594909",
+      "title": "Napster Founder Obtains New Patent for P2P-Polluting Anti-Piracy Tech",
+      "url": "https://torrentfreak.com/napster-founders-screening-room-obtains-new-patent-for-p2p-polluting-anti-piracy-tech-200619/",
+      "score": 10,
+      "createdBy": "dane-pgp",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23602770",
+      "title": "Hasura Cloud: Managed GraphQL for your database and services",
+      "url": "https://hasura.io/blog/announcing-hasura-cloud-managed-graphql-for-your-database-and-services/",
+      "score": 10,
+      "createdBy": "alberteinstein",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23594462",
+      "title": "Do-it-Yourself ASICs (2013)",
+      "url": "https://www.analog.com/en/analog-dialogue/raqs/raq-issue-95.html#",
+      "score": 43,
+      "createdBy": "omgwtfbyobbq",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604673",
+      "title": "Apple Developer Transition Kit Website, Application, and Cost",
+      "url": "https://developer.apple.com/programs/universal/",
+      "score": 29,
+      "createdBy": "gjsman-1000",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23606657",
+      "title": "Foundation (Asimov)",
+      "url": "https://youtube.com/watch?v=xgbPSA94Rqg",
+      "score": 11,
+      "createdBy": "tosh",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23594281",
+      "title": "Memory-Prediction Asymmetry",
+      "url": "https://heteroskedasticblog.wordpress.com/2020/06/21/memory-prediction-asymmetry/",
+      "score": 25,
+      "createdBy": "lambdatronics",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612184",
+      "title": "Robust Client-Side JavaScript",
+      "url": "https://molily.de/robust-javascript/",
+      "score": 5,
+      "createdBy": "tosh",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23617530",
+      "title": "Apple will require apps to have “Privacy Labels” summarizing data collection",
+      "url": "https://www.pcmag.com/news/how-much-data-are-your-apps-collecting-apple-privacy-labels-will-tell-you",
+      "score": 15,
+      "createdBy": "lmkg",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611732",
+      "title": "People Read Online. A Study by Nielsen Norman Group",
+      "url": "https://www.nngroup.com/articles/how-people-read-online/",
+      "score": 9,
+      "createdBy": "adamfard",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599249",
+      "title": "Stuck at home, scientists discover new insect species",
+      "url": "https://www.wired.com/story/stuck-at-home-scientists-discover-9-new-insect-species/",
+      "score": 91,
+      "createdBy": "exanimo_sai",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23593836",
+      "title": "Paul Erdős in Madras (2019)",
+      "url": "https://www.thehindu.com/society/paul-erds-a-legendary-mathematician-in-madras/article28295095.ece",
+      "score": 50,
+      "createdBy": "happy-go-lucky",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611607",
+      "title": "Rootless Containers",
+      "url": "https://rootlesscontaine.rs/",
+      "score": 4,
+      "createdBy": "based2",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23605362",
+      "title": "Why did Facebook acquire Mapillary?",
+      "url": "https://medium.com/@joemorrison/why-on-earth-did-facebook-just-acquire-mapillary-9838405272f8",
+      "score": 167,
+      "createdBy": "ephesee",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604277",
+      "title": "Mathematicians urge colleagues to boycott police work in wake of killings",
+      "url": "https://www.nature.com/articles/d41586-020-01874-9",
+      "score": 176,
+      "createdBy": "pseudolus",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597231",
+      "title": "Ethics in Geo",
+      "url": "https://macwright.org/2020/06/21/ethics-in-geo.html",
+      "score": 128,
+      "createdBy": "chmaynard",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23609046",
+      "title": "Show HN: Node.js CRUD template with users, password resets and permissions",
+      "url": "https://github.com/cris691/servedata",
+      "score": 17,
+      "createdBy": "mongojunction",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23608776",
+      "title": "Rust's Huge Compilation Units",
+      "url": "https://pingcap.com/blog/rust-huge-compilation-units/",
+      "score": 58,
+      "createdBy": "Bella-Xiang",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23602434",
+      "title": "Apple WWDC Keynote",
+      "url": "https://www.youtube.com/watch?v=GEZhD3J89ZE",
+      "score": 215,
+      "createdBy": "ProZsolt",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23602008",
+      "title": "Show HN: Web3Torrent – Adding Ethereum Micropayments to WebTorrent",
+      "url": "https://blog.statechannels.org/introducing-web3torrent/",
+      "score": 201,
+      "createdBy": "lihorne",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23619630",
+      "title": "You Can Now Buy Bitcoin at CVS,7-Eleven, Rite-Aid",
+      "url": "https://www.forbes.com/sites/colinharper/2020/06/23/you-can-now-buy-bitcoin-at-cvs7-eleven-rite-aid/#1390d39a3464",
+      "score": 6,
+      "createdBy": "surfallday",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598830",
+      "title": "The US military is getting serious about nuclear thermal propulsion",
+      "url": "https://arstechnica.com/science/2020/06/the-us-military-is-getting-serious-about-nuclear-thermal-propulsion/",
+      "score": 172,
+      "createdBy": "rbanffy",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596970",
+      "title": "Ask HN: How do you get technical mentorship?",
+      "url": null,
+      "score": 8,
+      "createdBy": "mishftw",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597834",
+      "title": "Forking HTML into a static language doesn't make sense",
+      "url": "https://robert.ocallahan.org/2020/05/why-forking-html-into-static-language.html",
+      "score": 79,
+      "createdBy": "tannhaeuser",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23600380",
+      "title": "Hardware Floating Point",
+      "url": "https://blog.stephenmarz.com/2020/06/14/hardware-floating-point/",
+      "score": 53,
+      "createdBy": "azhenley",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23609834",
+      "title": "Equation shows that large-scale conspiracies would quickly reveal themselves",
+      "url": "https://phys.org/news/2016-01-equation-large-scale-conspiracies-quickly-reveal.html",
+      "score": 4,
+      "createdBy": "memexy",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597294",
+      "title": "Nginx UI – Access and modify the Nginx configurations files without CLI",
+      "url": "https://github.com/schenkd/nginx-ui",
+      "score": 279,
+      "createdBy": "gilad",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23618197",
+      "title": "The Mac’s iconic startup chime is back in macOS Big Sur",
+      "url": "https://www.theverge.com/2020/6/23/21300545/apple-mac-macos-big-sur-startup-chime-sound-back-return",
+      "score": 19,
+      "createdBy": "sjb_Live",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612811",
+      "title": "Alex: ML-enhanced range index, similar in functionality to a B+ Tree",
+      "url": "https://github.com/microsoft/ALEX#introduction",
+      "score": 3,
+      "createdBy": "ingve",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23607458",
+      "title": "Frustration project: Automate data entry into PeopleSoft with Selenium",
+      "url": "https://github.com/tbensky/selenium-peoplesoft",
+      "score": 96,
+      "createdBy": "tbensky",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622219",
+      "title": "Open IPP Report – Exposed Printer Devices on the Internet",
+      "url": "https://www.shadowserver.org/news/open-ipp-report-exposed-printer-devices-on-the-internet/",
+      "score": 4,
+      "createdBy": "exanimo_sai",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596392",
+      "title": "DikuMUD 3 Is Released",
+      "url": "https://github.com/Seifert69/DikuMUD3",
+      "score": 102,
+      "createdBy": "bovermyer",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23609024",
+      "title": "nCino S-1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1566895/000119312520174870/d828449ds1.htm",
+      "score": 128,
+      "createdBy": "nsx147",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23601098",
+      "title": "Japan Captures TOP500 Crown with Arm-Powered Supercomputer",
+      "url": "https://www.top500.org/news/japan-captures-top500-crown-arm-powered-supercomputer/",
+      "score": 311,
+      "createdBy": "l31g",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596653",
+      "title": "Show HN: Analytics Setup Guidebook- Explaining the Confusing Analytics Landscape",
+      "url": "https://holistics.io/books/setup-analytics",
+      "score": 10,
+      "createdBy": "huy",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597688",
+      "title": "Prolog Web Applications (2016)",
+      "url": "https://www.metalevel.at/prolog/web",
+      "score": 103,
+      "createdBy": "ArneVogel",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23614196",
+      "title": "Starving to Health: Fasting-Mimicking Diet",
+      "url": "https://artlapinsch.com/2020/06/23/starving-to-health-fasting-mimicking-diet/",
+      "score": 17,
+      "createdBy": "tosh",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23602361",
+      "title": "Netgear Zero-Day Allows Full Takeover of Dozens of Router Models",
+      "url": "https://threatpost.com/netgear-zero-day-takeover-routers/156744/",
+      "score": 8,
+      "createdBy": "LinuxBender",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612451",
+      "title": "Show HN: Runc – Compile and run C in one command",
+      "url": "https://github.com/alcover/runc",
+      "score": 13,
+      "createdBy": "alcover",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23610644",
+      "title": "Python Pickle’s Flaws",
+      "url": "https://nedbatchelder.com/blog/202006/pickles_nine_flaws.html",
+      "score": 3,
+      "createdBy": "BerislavLopac",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23621182",
+      "title": "iOS 14 Notifies Users When an App or Widget Reads Your Clipboard",
+      "url": "https://www.macrumors.com/2020/06/23/ios-14-clipboard-pasted-notifications/",
+      "score": 21,
+      "createdBy": "feross",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612856",
+      "title": "Mathematics in type theory",
+      "url": "https://xenaproject.wordpress.com/2020/06/20/mathematics-in-type-theory/",
+      "score": 24,
+      "createdBy": "gbrown_",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611845",
+      "title": "Intel to use nanowire/nanoribbon transistors in volume ‘in five years’",
+      "url": "https://www.anandtech.com/show/15865/intel-to-use-nanowirenanoribbon-transistors-in-volume-in-five-years",
+      "score": 51,
+      "createdBy": "rbanffy",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622970",
+      "title": "Elon Musk and the Value of Localism-What We Should Do Instead of Going to Mars",
+      "url": "https://wearenotsaved.com/2020/06/24/elon-musk-and-the-value-of-localism-or-what-we-should-do-instead-of-going-to-mars/",
+      "score": 5,
+      "createdBy": "richeyrw",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611157",
+      "title": "Show HN: Antimander – Optimize Congressional Districts with Genetic Algorithms",
+      "url": "https://antimander.org/",
+      "score": 63,
+      "createdBy": "joelS",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622996",
+      "title": "Parallels Desktop for Mac Running on Mac with Apple Silicon",
+      "url": "https://www.parallels.com/blogs/apple-silicon-wwdc/",
+      "score": 49,
+      "createdBy": "theBashShell",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612212",
+      "title": "Sysinternals ProcDump for Linux",
+      "url": "https://build5nines.com/sysinternals-procdump-for-linux/",
+      "score": 29,
+      "createdBy": "GordonS",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599263",
+      "title": "MIT 6.001 Structure and Interpretation (1986) [video]",
+      "url": "https://www.youtube.com/playlist?list=PLE18841CABEA24090",
+      "score": 249,
+      "createdBy": "rsapkf",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23615682",
+      "title": "Show HN: Log Owl – open-source, privacy-focused error tracking and analytics",
+      "url": "https://logowl.io",
+      "score": 6,
+      "createdBy": "jz222",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599278",
+      "title": "Fast implementation of DeepMind's AlphaZero algorithm in Julia",
+      "url": "https://github.com/jonathan-laurent/AlphaZero.jl",
+      "score": 295,
+      "createdBy": "metalwhale",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23619380",
+      "title": "Facebook accused of trying to bypass GDPR, slurp domain owners' Whois info",
+      "url": "https://www.theregister.com/2020/06/23/facebook_gdpr_workaround/",
+      "score": 11,
+      "createdBy": "bitxbitxbitcoin",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23609074",
+      "title": "What Comes After Zoom?",
+      "url": "https://www.ben-evans.com/benedictevans/2020/6/22/zoom-and-the-next-video",
+      "score": 151,
+      "createdBy": "1cvmask",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597687",
+      "title": "What happens when you update your DNS",
+      "url": "https://jvns.ca/blog/how-updating-dns-works/",
+      "score": 246,
+      "createdBy": "kiyanwang",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23601161",
+      "title": "Most employees of NYT won’t be required back in physical offices until 2021",
+      "url": "https://twitter.com/Sulliview/status/1275074784351543298",
+      "score": 470,
+      "createdBy": "danso",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622708",
+      "title": "U.S. Army Awards Pocket-Sized Drones $20.6M Contract",
+      "url": "https://interestingengineering.com/us-army-awards-pocket-sized-drones-206-million-contract",
+      "score": 9,
+      "createdBy": "vsareto",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599264",
+      "title": "The Antagonism of Human and Nature in Factorio",
+      "url": "https://molily.de/antagonism-human-nature/",
+      "score": 57,
+      "createdBy": "erlend_sh",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622689",
+      "title": "The Open Goldberg Variations",
+      "url": "https://opengoldbergvariations.org/",
+      "score": 31,
+      "createdBy": "exolymph",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611347",
+      "title": "Former Wirecard CEO Markus Braun arrested",
+      "url": "https://www.dw.com/en/former-wirecard-ceo-markus-braun-arrested/a-53905720",
+      "score": 181,
+      "createdBy": "kleiba",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23600773",
+      "title": "$340b of $454b Mnuchin was to turn over to the fed is unaccounted for",
+      "url": "https://wallstreetonparade.com/2020/06/340-billion-of-the-454-billion-that-mnuchin-was-to-turn-over-to-the-fed-is-unaccounted-for/",
+      "score": 44,
+      "createdBy": "cinquemb",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597403",
+      "title": "ARM Mac Impact on Intel",
+      "url": "https://mondaynote.com/arm-mac-impact-on-intel-9641a8e73dca",
+      "score": 320,
+      "createdBy": "robin_reala",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622652",
+      "title": "“'Unnotarized.app' will damage your computer. You should move it to the Trash.”",
+      "url": "https://twitter.com/_inside/status/1275432403130028032",
+      "score": 9,
+      "createdBy": "miles",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23616150",
+      "title": "Red Hat reports security issue in Linux Kernel which was fixed 17 months prior",
+      "url": "https://www.openwall.com/lists/oss-security/2020/06/23/2",
+      "score": 90,
+      "createdBy": "artistsvoid",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23617629",
+      "title": "The End of OS X",
+      "url": "https://stratechery.com/2020/the-end-of-os-x/",
+      "score": 349,
+      "createdBy": "Amorymeltzer",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23610527",
+      "title": "Show HN: IHP, a batteries-included web framework built on Haskell and Nix",
+      "url": "https://ihp.digitallyinduced.com/",
+      "score": 269,
+      "createdBy": "_query",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23603906",
+      "title": "Favorite CLI Tools",
+      "url": "https://switowski.com/blog/favorite-cli-tools",
+      "score": 79,
+      "createdBy": "amjith",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23617887",
+      "title": "Pseudonymity as a Trivial Concession to Genius",
+      "url": "https://www.scottaaronson.com/blog/?p=4870",
+      "score": 120,
+      "createdBy": "MindGods",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612140",
+      "title": "Safari now blocks Google Analytics on sites, new Privacy Report feature shows",
+      "url": "https://appleinsider.com/articles/20/06/22/safari-now-blocks-google-analytics-on-sites-new-privacy-report-feature-shows",
+      "score": 52,
+      "createdBy": "imheretolearn",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599347",
+      "title": "The Digital Maginot Line (2018)",
+      "url": "https://www.ribbonfarm.com/2018/11/28/the-digital-maginot-line/",
+      "score": 28,
+      "createdBy": "mikro2nd",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23609819",
+      "title": "Opinions I have formed about the “geospatial industry”",
+      "url": "https://twitter.com/mouthofmorrison/status/1265635034939248640",
+      "score": 162,
+      "createdBy": "luu",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23615849",
+      "title": "Amazon Announces $2B Fund to Invest in Climate Tech Companies",
+      "url": "https://press.aboutamazon.com/news-releases/news-release-details/amazon-announces-2-billion-climate-pledge-fund-invest-companies",
+      "score": 146,
+      "createdBy": "sethbannon",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23623696",
+      "title": "Rosetta Won't Support x86 Virtualization Apps Running Windows",
+      "url": "https://www.macrumors.com/2020/06/23/rosetta-wont-support-x86-virtualization-windows/",
+      "score": 4,
+      "createdBy": "pier25",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23595164",
+      "title": "Returning the “killed” RSS of Reuters from the dead",
+      "url": "https://codarium.substack.com/p/returning-the-killed-rss-of-reuters",
+      "score": 96,
+      "createdBy": "artembugara",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611204",
+      "title": "Siberian town in arctic circle hits 101°F (38°C)",
+      "url": "https://www.forbes.com/sites/trevornace/2020/06/22/the-arctic-circle-hit-101f-saturday-its-hottest-temperature-ever/#38fff16f4eb6",
+      "score": 173,
+      "createdBy": "doitLP",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611399",
+      "title": "Britain nearly went bust in March, says Bank of England",
+      "url": "https://www.theguardian.com/world/2020/jun/22/britain-nearly-went-bust-in-march-says-bank-of-england",
+      "score": 8,
+      "createdBy": "jxub",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23603866",
+      "title": "Apple announces it will switch to its own processors for future Macs",
+      "url": "https://www.theverge.com/2020/6/22/21295475/apple-mac-processors-arm-silicon-chips-wwdc-2020",
+      "score": 1854,
+      "createdBy": "djrogers",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612925",
+      "title": "Mastercard to Acquire Finicity to Advance Open Banking Strategy",
+      "url": "https://www.businesswire.com/news/home/20200623005496/en/Mastercard-Acquire-Finicity-Advance-Open-Banking-Strategy",
+      "score": 6,
+      "createdBy": "sbmthakur",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23609659",
+      "title": "Why some physicists think there's a 'mirror universe' hiding in space-time",
+      "url": "https://www.livescience.com/truth-behind-nasa-mirror-parallel-universe.html",
+      "score": 13,
+      "createdBy": "laurex",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599250",
+      "title": "Saying thanks: testing a new Reactions feature",
+      "url": "https://stackoverflow.blog/2020/06/17/saying-thanks-testing-a-new-reactions-feature/",
+      "score": 71,
+      "createdBy": "bprasanna",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596042",
+      "title": "Apple repeatedly rejects Facebook Gaming app from App Store",
+      "url": "https://www.gamesindustry.biz/articles/2020-06-19-apple-repeatedly-rejects-facebook-gaming-app-for-app-store-inclusion",
+      "score": 17,
+      "createdBy": "teruakohatu",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23609293",
+      "title": "Hackers use Google Analytics to steal credit cards, bypass CSP",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-use-google-analytics-to-steal-credit-cards-bypass-csp/",
+      "score": 7,
+      "createdBy": "twapi",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23602100",
+      "title": "Reflections on Being a Female Founder",
+      "url": "https://tracy.posthaven.com/reflections-on-being-a-female-founder",
+      "score": 670,
+      "createdBy": "ralphleon",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23621453",
+      "title": "Why CoinDesk Respects Pseudonymity: A Stand Against Doxxing",
+      "url": "https://www.coindesk.com/why-coindesk-respects-pseudonymity-a-stand-against-doxxing",
+      "score": 65,
+      "createdBy": "apsec112",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599177",
+      "title": "Ego Graphs – the Google ‘vs’ trick",
+      "url": "https://adsp.ai/articles/google-vs-trick/",
+      "score": 349,
+      "createdBy": "datashrimp",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611738",
+      "title": "CERN approves plans for a $23B, 62-mile long super-collider",
+      "url": "https://www.engadget.com/cern-super-collider-higgs-boson-particle-092412017.html",
+      "score": 273,
+      "createdBy": "AliCollins",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597988",
+      "title": "Stretching the C64 Palette",
+      "url": "http://www.krajzewicz.de/blog/stretching-the-c64-palette.php",
+      "score": 63,
+      "createdBy": "ingve",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23608050",
+      "title": "Domain registrar Network Solutions threatens to drop anti-immigration website",
+      "url": "https://abcnews.go.com/US/wireStory/online-registrar-threatens-drop-anti-immigration-website-71391728",
+      "score": 10,
+      "createdBy": "adventured",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599318",
+      "title": "NPhysics: 2D and 3D Real-Time Physics Engine for Rust",
+      "url": "https://nphysics.org/",
+      "score": 184,
+      "createdBy": "ArtWomb",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612077",
+      "title": "Show HN: CloudSkew – Draw AWS, Azure, GCP, K8s architecture diagrams",
+      "url": "https://www.cloudskew.com/",
+      "score": 125,
+      "createdBy": "mithunshanbhag",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604253",
+      "title": "Show HN: Animate anyone with your facial expression",
+      "url": "https://alvin5.com/create",
+      "score": 6,
+      "createdBy": "boraturant",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598729",
+      "title": "New Report Shows Why We Must Tackle Excessive Wealth to Save the Planet",
+      "url": "https://www.sciencealert.com/tackling-excessive-wealth-and-consumerism-will-save-the-planet-not-technology-experts-say",
+      "score": 19,
+      "createdBy": "rbanffy",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596236",
+      "title": "Hottest Arctic temperature record probably set with reading in Siberia",
+      "url": "https://www.washingtonpost.com/weather/2020/06/21/arctic-temperature-record-siberia/",
+      "score": 68,
+      "createdBy": "pseudolus",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604625",
+      "title": "Show HN: NavNav – Curated UI Examples",
+      "url": "https://navnav.co/",
+      "score": 6,
+      "createdBy": "giangnguyen",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23605517",
+      "title": "Trump admin to extend and expand immigration restrictions",
+      "url": "https://www.washingtonpost.com/immigration/trump-immigration-workers-coronavirus/2020/06/22/3b969e88-b489-11ea-9b0f-c797548c1154_story.html",
+      "score": 12,
+      "createdBy": "aditya",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604267",
+      "title": "Covid-19 is threatening the survival of US primary care",
+      "url": "https://www.bmj.com/content/369/bmj.m2333",
+      "score": 6,
+      "createdBy": "blendo",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599454",
+      "title": "Ask HN: Social Network for Engineers?",
+      "url": null,
+      "score": 12,
+      "createdBy": "devchris10",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23605334",
+      "title": "Web Scraping with Prolog",
+      "url": "https://www.youtube.com/watch?v=zKrw-pRI9ac",
+      "score": 5,
+      "createdBy": "inetsee",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597483",
+      "title": "When your child is a Psychopath (2017)",
+      "url": "https://www.theatlantic.com/magazine/archive/2017/06/when-your-child-is-a-psychopath/524502/",
+      "score": 13,
+      "createdBy": "zameermfm",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598975",
+      "title": "The failed rollout of Britain's covid-19 app were the result of clear errors",
+      "url": "https://www.technologyreview.com/2020/06/19/1004190/uk-covid-contact-tracing-app-fiasco/",
+      "score": 64,
+      "createdBy": "kjakm",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596684",
+      "title": "iAddiction",
+      "url": "https://www.profgalloway.com/iaddiction",
+      "score": 10,
+      "createdBy": "1cvmask",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23601095",
+      "title": "Pentagon Wargame Scenario: 2025 Generation Z Dark Web Rebellion",
+      "url": "https://www.documentcloud.org/documents/6936805-JLASS-Document.html",
+      "score": 8,
+      "createdBy": "cdepman",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622865",
+      "title": "Ask HN: You cannot delete comments posts or your account on HN. Concerned?",
+      "url": null,
+      "score": 108,
+      "createdBy": "headShrinker",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604822",
+      "title": "Important Things That You Should Take Care When Integrate of Stripe Connect",
+      "url": "https://blog.maddevs.io/integration-of-stripe-connect-926daa2978d5",
+      "score": 14,
+      "createdBy": "Gen1us",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23600314",
+      "title": "The Pandemic Sent Settlers of Catan and Other Game Makers Scrambling",
+      "url": "https://marker.medium.com/the-pandemic-sent-settlers-of-catan-and-other-game-makers-scrambling-db273f2cfffe",
+      "score": 3,
+      "createdBy": "BobbieG",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604369",
+      "title": "macOS Big Sur Preview",
+      "url": "https://www.apple.com/macos/big-sur-preview/",
+      "score": 66,
+      "createdBy": "tambourine_man",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23594826",
+      "title": "Research team cracks the cause of fatal corona blood clots",
+      "url": "https://www.jpost.com/health-science/hadassah-doctors-crack-the-cause-of-fatal-corona-blood-clots-631681",
+      "score": 19,
+      "createdBy": "drocer88",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23615064",
+      "title": "Trump suspends H1B and non-immigrant visas",
+      "url": "https://www.nytimes.com/2020/06/22/us/politics/trump-h1b-work-visas.html",
+      "score": 101,
+      "createdBy": "bajaj",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596471",
+      "title": "Ask HN: How do you take notes when reading a book?",
+      "url": null,
+      "score": 77,
+      "createdBy": "Foe",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599167",
+      "title": "Ask HN: What will happen with Mac as a dev platform after ARM?",
+      "url": null,
+      "score": 8,
+      "createdBy": "rreyes1979",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23609626",
+      "title": "Tech giants blast Trump executive order suspending H-1B visas",
+      "url": "https://www.cnet.com/news/tech-giants-blast-trump-executive-order-suspending-h-1b-visas/",
+      "score": 9,
+      "createdBy": "Ice_cream_suit",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23606739",
+      "title": "Why some nations are rich and others poor (2016)",
+      "url": "https://panampost.com/jose-azel/2016/09/07/the-real-reason-why-some-nations-are-rich-and-others-poor",
+      "score": 27,
+      "createdBy": "novaRom",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23614167",
+      "title": "Superhuman’s email app is overhyped and overpriced",
+      "url": "https://www.theverge.com/21299681/superhuman-email-app-review-price-gmail-iphone-mac",
+      "score": 66,
+      "createdBy": "italophil",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23594026",
+      "title": "Nursing Homes Evict Residents for Lucrative Coronavirus Paitents",
+      "url": "https://www.nytimes.com/2020/06/21/business/nursing-homes-evictions-discharges-coronavirus.html",
+      "score": 5,
+      "createdBy": "thazework",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596163",
+      "title": "Israeli spyware used to target Moroccan journalist, Amnesty claims",
+      "url": "https://www.theguardian.com/technology/2020/jun/21/journalist-says-he-was-targeted-by-spyware-from-firm-despite-its-human-rights-policy",
+      "score": 10,
+      "createdBy": "melenaboija",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597798",
+      "title": "Paul Whelan: The strange case of the ex-marine jailed for spying in Russia",
+      "url": "https://www.bbc.com/news/world-53110087",
+      "score": 4,
+      "createdBy": "d99kris",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23600275",
+      "title": "Apple, Hey, and the Path Forward",
+      "url": "https://hey.com/apple/path/",
+      "score": 106,
+      "createdBy": "braythwayt",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23602238",
+      "title": "Apple caters to China by pulling thousands of “unlicensed” iPhone games",
+      "url": "https://arstechnica.com/tech-policy/2020/06/apple-caters-to-china-by-pulling-thousands-of-unlicensed-iphone-games/",
+      "score": 6,
+      "createdBy": "derchu",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23595994",
+      "title": "CSS Road Guide",
+      "url": "https://lyty.dev/css/index.html",
+      "score": 10,
+      "createdBy": "Software202",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23600037",
+      "title": "Why venture capital doesn’t build the things we need",
+      "url": "https://www.technologyreview.com/2020/06/17/1003318/why-venture-capital-doesnt-build-the-things-we-really-need/",
+      "score": 12,
+      "createdBy": "elorant",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598138",
+      "title": "Why it's so hard to get unemployment benefits [video]",
+      "url": "https://www.youtube.com/watch?v=ualUPur6iks",
+      "score": 19,
+      "createdBy": "ZeljkoS",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596260",
+      "title": "Is This Life Real? (2016)",
+      "url": "https://aeon.co/essays/is-reality-a-computer-simulation-does-it-matter",
+      "score": 6,
+      "createdBy": "bertdc",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23594514",
+      "title": "ZeroTrustOps: Securing at Scale",
+      "url": "https://blog.sonatype.com/zerotrustops-securing-at-scale",
+      "score": 25,
+      "createdBy": "oedmarap",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611072",
+      "title": "Why Apple's move from Intel to ARM means we should stop buying Macs",
+      "url": "https://www.pcworld.com/article/3563892/why-apples-move-from-intel-to-arm-means-we-should-stop-buying-macs.html",
+      "score": 17,
+      "createdBy": "atomlib",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596721",
+      "title": "Long-term Covid19 cases – Clinical Features",
+      "url": "https://youtu.be/U7BbXEOB1gk",
+      "score": 4,
+      "createdBy": "hydroreadsstuff",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611565",
+      "title": "Show HN: Learn Regular Expressions with simple, interactive exercises",
+      "url": "https://regexone.com/",
+      "score": 142,
+      "createdBy": "pusv",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23594109",
+      "title": "Isolation May Hurt America's Ability to Fight Coronavirus",
+      "url": "https://www.rollingstone.com/culture/culture-features/coronavirus-isolation-negative-effects-health-loneliness-1016478/",
+      "score": 3,
+      "createdBy": "laurex",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23607097",
+      "title": "Trump to sign EO suspending work visas through 2020 (H1B, H2B, H4, L1, J1)",
+      "url": "https://thehill.com/homenews/administration/503914-trump-to-sign-executive-order-suspending-certain-work-visas-through",
+      "score": 41,
+      "createdBy": "jianshen",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23600930",
+      "title": "Arecibo Observatory",
+      "url": "https://en.wikipedia.org/wiki/Arecibo_Observatory",
+      "score": 3,
+      "createdBy": "lowmemcpu",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23597555",
+      "title": "Information Attacks on Democracies – By Henry Farrell, Bruce Schneier",
+      "url": "https://www.lawfareblog.com/information-attacks-democracies",
+      "score": 3,
+      "createdBy": "MaysonL",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23594306",
+      "title": "Cory Doctorow on the Politicalization of Fandoms",
+      "url": "https://twitter.com/doctorow/status/1274741763878424581",
+      "score": 5,
+      "createdBy": "blendergeek",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23612950",
+      "title": "Ask HN: How are you holding up?",
+      "url": null,
+      "score": 296,
+      "createdBy": "BruceOxenford",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604956",
+      "title": "Trump Order Would Temporarily Suspend New H-1B, Other Visas",
+      "url": "https://www.wsj.com/articles/trump-order-would-temporarily-suspend-new-h-1b-other-visas-11592853371",
+      "score": 17,
+      "createdBy": "_eigenfoo",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23600260",
+      "title": "People have stopped going to the doctor and most seem fine",
+      "url": "https://www.nytimes.com/2020/06/22/opinion/coronavirus-reopen-hospitals.html",
+      "score": 44,
+      "createdBy": "megacorp",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23595212",
+      "title": "Fujifilm tape: cheapest way to store 1000TB of data online",
+      "url": "https://www.techradar.com/news/heres-the-cheapest-way-to-store-a-huge-1000tb-of-data-online",
+      "score": 4,
+      "createdBy": "walterbell",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596413",
+      "title": "Ask HN: Where to spend company’s education budget?",
+      "url": null,
+      "score": 8,
+      "createdBy": "cryptozeus",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604088",
+      "title": "The Next Step for Mixer",
+      "url": "https://blog.mixer.com/2020/06/22/the-next-step-for-mixer/",
+      "score": 34,
+      "createdBy": "bdz",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23594578",
+      "title": "China's Hacking Spree Will Have a Decades-Long Fallout",
+      "url": "https://www.wired.com/story/china-equifax-anthem-marriott-opm-hacks-data/",
+      "score": 6,
+      "createdBy": "haltingproblem",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23607264",
+      "title": "E/O: Suspending Entry of Aliens Presenting a Risk to the U.S. Labor Market",
+      "url": "https://www.whitehouse.gov/presidential-actions/proclamation-suspending-entry-aliens-present-risk-u-s-labor-market-following-coronavirus-outbreak/",
+      "score": 40,
+      "createdBy": "ayakura",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23608003",
+      "title": "Trump extends limits on some work visas through 2020",
+      "url": "https://www.cnn.com/2020/06/22/politics/trump-immigration-work-visas/index.html",
+      "score": 5,
+      "createdBy": "rantwasp",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23618420",
+      "title": "Study: 20 Largest US police forces not compliant with international rights laws",
+      "url": "https://www.theguardian.com/us-news/2020/jun/22/us-police-human-rights-standards-report",
+      "score": 18,
+      "createdBy": "chishaku",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23604733",
+      "title": "Why Washed-Up Dudes Like Me Can’t Let the Skateboard Go",
+      "url": "https://melmagazine.com/en-us/story/why-washed-up-dudes-like-me-cant-let-the-skateboard-go",
+      "score": 4,
+      "createdBy": "jriot",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596868",
+      "title": "The Masters of the Diamond World Are Losing Control",
+      "url": "https://www.bloomberg.com/news/articles/2020-06-21/the-masters-of-the-diamond-world-are-losing-control",
+      "score": 5,
+      "createdBy": "JumpCrisscross",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23599774",
+      "title": "Data Dividend Project",
+      "url": "https://www.datadividendproject.com/",
+      "score": 69,
+      "createdBy": "snake117",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23611459",
+      "title": "Archival Identifiers for Digital Files",
+      "url": "https://blog.adamretter.org.uk/archival-identifiers-for-digital-files/",
+      "score": 22,
+      "createdBy": "todsacerdoti",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23598292",
+      "title": "Why you should re-read Paradise Lost (2017)",
+      "url": "https://www.bbc.com/culture/article/20170419-why-paradise-lost-is-one-of-the-worlds-most-important-poems",
+      "score": 115,
+      "createdBy": "emptybits",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23594735",
+      "title": "Ask HN: Impossible Ideas?",
+      "url": null,
+      "score": 41,
+      "createdBy": "ilolu",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23622540",
+      "title": "Unity 3D Learn Premium is now available to everyone at no cost",
+      "url": "https://blogs.unity3d.com/2020/06/23/learn-premium-is-now-available-to-everyone-at-no-cost-forever/",
+      "score": 4,
+      "createdBy": "MikusR",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23596370",
+      "title": "Sergey Brin has a secret disaster relief charity",
+      "url": "https://www.thedailybeast.com/google-co-founder-sergey-brin-has-a-secret-disaster-relief-squad",
+      "score": 66,
+      "createdBy": "rdp",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23606693",
+      "title": "Trump to suspend entry of certain foreign workers despite business opposition",
+      "url": "https://www.reuters.com/article/us-usa-immigration-workers/trump-to-suspend-entry-of-certain-foreign-workers-despite-business-group-opposition-idUSKBN23T2ZW",
+      "score": 15,
+      "createdBy": "DarkContinent",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23619151",
+      "title": "Some Work-at-Home Tips for FOSS Contributors",
+      "url": "https://sfconservancy.org/blog/2020/jun/23/work-at-home-tips-for-foss/",
+      "score": 3,
+      "createdBy": "chmaynard",
+      "createdDate": "01-19-1970"
+    },
+    {
+      "id": "23618101",
+      "title": "FFFG: Freedom from Facebook and Google",
+      "url": "https://www.freedomfromfacebookandgoogle.com/",
+      "score": 64,
+      "createdBy": "lowmemcpu",
+      "createdDate": "01-19-1970"
+    }
+  ]
+}
