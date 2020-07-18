@@ -1,11 +1,6 @@
-# Hacker News Service API Assignment
+# Rest Service 
 
-Prerequisites:-
-
-1) Download and install Redis from https://redis.io/download.
-2) Run Redis server in background.
-
-App Features:-
+Features:-
 
 1) Ability to run on docker.
 2) Ability to cache the service response for 10 minutes.
